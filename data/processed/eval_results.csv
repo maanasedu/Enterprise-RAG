@@ -1,0 +1,46 @@
+question,faithfulness,answer_relevancy,context_precision,context_recall
+What is the title of the dataset introduced by Payal Bajaj et al. in 2016?,1.0,0.9,0.95,0.9
+In what year was the MS MARCO dataset introduced?,1.0,1.0,0.95,1.0
+What is the name of the preprint server where the MS MARCO dataset paper was published?,1.0,1.0,0.9,1.0
+Who are the authors of the paper 'Autoregressive Search Engines: Generating'?,1.0,0.95,0.95,0.7
+What is the year of publication for the paper 'Autoregressive Search Engines: Generating'?,1.0,1.0,0.95,1.0
+What approach was used to identify relevant snippets from the text?,1.0,0.9,0.95,0.9
+What is Regex an abbreviation for?,1.0,1.0,0.9,0.9
+Why was Regex chosen over more complex retrieval models?,1.0,0.95,0.95,1.0
+What is an alternative retrieval model to Regex?,1.0,0.8,0.9,0.5
+What does RAG stand for in the context of the provided text?,1.0,1.0,0.98,1.0
+What dataset was used to evaluate the top-10 retrieval accuracy?,1.0,0.4,0.95,0.9
+What is the highest retrieval accuracy achieved by the hybrid query approach?,1.0,1.0,0.95,0.9
+What encoder was used in the hybrid query approach with the highest retrieval accuracy?,1.0,0.95,0.95,0.9
+What is the name of the fields used in the hybrid query approach with the highest retrieval accuracy?,1.0,0.9,0.95,0.9
+What is the figure number that reveals the findings of the hybrid query approach?,1.0,1.0,0.9,1.0
+What are the first two numbers mentioned in the text?,0.0,0.9,0.9,0.0
+What is the term mentioned after the numbers 35.33 and 53.38?,0.0,0.2,0.1,0.9
+What are the numbers mentioned after the term 'what_is'?,0.2,0.9,0.95,0.0
+What is the name of the open-source chatbot that impresses GPT-4 with 90% ChatGPT quality?,1.0,1.0,1.0,0.9
+What is the name of the foundation language models described by H. Touvron et al.?,1.0,0.7,0.9,0.95
+In what year was the Vicuna chatbot described by S. Zhuang et al.?,1.0,1.0,0.9,1.0
+Where can information about Vicuna be found online?,0.4,0.95,0.9,1.0
+What is the size of the bge-large-en model in parameters?,1.0,1.0,0.9,0.9
+In what year was the flan-t5-large model released?,1.0,1.0,0.9,0.9
+What is the size of the Large Size models?,1.0,0.95,0.95,1.0
+What is the size of the instructor-xl model in parameters?,0.2,0.9,0.9,0.9
+In what year was the instructor-xl model released?,1.0,1.0,0.9,0.8
+What does T ′ represent in the given equation?,1.0,0.95,0.95,0.6
+What is the purpose of RIND?,1.0,0.96,0.95,0.9
+What is used to integrate the retrieved knowledge?,0.9,0.9,0.4,0.0
+How are the external knowledge references structured in the prompt template?,1.0,0.95,0.9,0.0
+What is the LLM asked to do based on the provided information?,1.0,0.95,0.85,0.0
+What percentage of queries were sampled from WikiPassageQA?,1.0,0.9,0.95,0.5
+What type of correlation was observed between reranker-assigned benefits and downstream quality?,1.0,0.95,0.95,1.0
+What is the value of the Pearson correlation coefficient?,1.0,1.0,0.98,0.1
+What metric is used to measure the quality of the responses?,0.3,0.6,0.9,0.0
+What figure shows the impact of chunk candidate counts on WikiPassageQA?,1.0,1.0,0.9,0.9
+Who proposed a prompt-tuning method in 2022?,1.0,1.0,0.95,1.0
+What year was the prompt-tuning method proposed?,1.0,1.0,0.9,0.9
+What type of modeling uses the meme text and image caption as a prompt?,0.8,0.9,0.95,0.9
+Who developed masked language modeling?,0.2,0.95,0.7,0.9
+What type of paradigm do existing harmful meme detection approaches use?,1.0,0.95,0.95,1.0
+What is the report number of the technical report?,0.9,0.9,0.2,0.0
+Which universities are associated with the technical report?,0.0,0.4,0.9,1.0
+In what year was the technical report published?,1.0,1.0,0.9,0.0

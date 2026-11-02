@@ -1,0 +1,12 @@
+{
+  "_comment": "Per-model LLM prices used ONLY to ESTIMATE cost (reported tokens x price). Not billing data. Keys are '<provider>/<model>' as configured in generation/llm_client.py. Override per deployment with LLM_PRICE_INPUT_PER_1M / LLM_PRICE_OUTPUT_PER_1M or point LLM_PRICING_FILE at your own file.",
+  "currency": "USD",
+  "models": {
+    "groq/openai/gpt-oss-120b": {
+      "input_per_1m": 0.15,
+      "output_per_1m": 0.60,
+      "as_of": "2026-10-02",
+      "note": "UNVERIFIED: taken from third-party price listings checked on as_of; one listing showed 0.75 output. Not confirmed against Groq's own pricing page. Confirm before relying on any cost figure."
+    }
+  }
+}

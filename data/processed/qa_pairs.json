@@ -1,0 +1,2102 @@
+[
+  {
+    "question": "What is the title of the dataset introduced by Payal Bajaj et al. in 2016?",
+    "answer": "MS MARCO: A Human Generated Machine Reading Comprehension Dataset",
+    "source_chunk": "arXiv:2212.08073 N/A, N/A (2022), N/A.\n[3] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu,\nRangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016.\nMS MARCO: A Human Generated Machine Reading Comprehension Dataset.\narXiv preprint arXiv:1611.09268 N/A, N/A (2016), N/A.\n[4] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian\nRiedel, and Fabio Petroni. 2022. Autoregressive Search Engines: Generating",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 116,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "In what year was the MS MARCO dataset introduced?",
+    "answer": "2016",
+    "source_chunk": "arXiv:2212.08073 N/A, N/A (2022), N/A.\n[3] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu,\nRangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016.\nMS MARCO: A Human Generated Machine Reading Comprehension Dataset.\narXiv preprint arXiv:1611.09268 N/A, N/A (2016), N/A.\n[4] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian\nRiedel, and Fabio Petroni. 2022. Autoregressive Search Engines: Generating",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 116,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What is the name of the preprint server where the MS MARCO dataset paper was published?",
+    "answer": "arXiv",
+    "source_chunk": "arXiv:2212.08073 N/A, N/A (2022), N/A.\n[3] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu,\nRangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016.\nMS MARCO: A Human Generated Machine Reading Comprehension Dataset.\narXiv preprint arXiv:1611.09268 N/A, N/A (2016), N/A.\n[4] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian\nRiedel, and Fabio Petroni. 2022. Autoregressive Search Engines: Generating",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 116,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "Who are the authors of the paper 'Autoregressive Search Engines: Generating'?",
+    "answer": "Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian Riedel, and Fabio Petroni",
+    "source_chunk": "arXiv:2212.08073 N/A, N/A (2022), N/A.\n[3] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu,\nRangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016.\nMS MARCO: A Human Generated Machine Reading Comprehension Dataset.\narXiv preprint arXiv:1611.09268 N/A, N/A (2016), N/A.\n[4] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian\nRiedel, and Fabio Petroni. 2022. Autoregressive Search Engines: Generating",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 116,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What is the year of publication for the paper 'Autoregressive Search Engines: Generating'?",
+    "answer": "2022",
+    "source_chunk": "arXiv:2212.08073 N/A, N/A (2022), N/A.\n[3] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu,\nRangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016.\nMS MARCO: A Human Generated Machine Reading Comprehension Dataset.\narXiv preprint arXiv:1611.09268 N/A, N/A (2016), N/A.\n[4] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Wen-tau Yih, Sebastian\nRiedel, and Fabio Petroni. 2022. Autoregressive Search Engines: Generating",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 116,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What approach was used to identify relevant snippets from the text?",
+    "answer": "Regex",
+    "source_chunk": "based on regular expressions (Regex) to identify relevant snippets from the text. As shown in the\nliterature, a RAG approach proves to be more efficient and effective than providing the LLM with\nlarger context windows [13]. We opted for Regex over more complex retrieval models, such as Term\nFrequency-Inverse Document Frequency, Cohere\u2019s re-rank [14], or Instructor embeddings [15], in\norder to avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "metadata": {
+      "pages": 9,
+      "filename": "paper_033.pdf",
+      "type": "pdf",
+      "chunk_index": 12,
+      "chunk_total": 62
+    }
+  },
+  {
+    "question": "What is Regex an abbreviation for?",
+    "answer": "Regular expressions",
+    "source_chunk": "based on regular expressions (Regex) to identify relevant snippets from the text. As shown in the\nliterature, a RAG approach proves to be more efficient and effective than providing the LLM with\nlarger context windows [13]. We opted for Regex over more complex retrieval models, such as Term\nFrequency-Inverse Document Frequency, Cohere\u2019s re-rank [14], or Instructor embeddings [15], in\norder to avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "metadata": {
+      "pages": 9,
+      "filename": "paper_033.pdf",
+      "type": "pdf",
+      "chunk_index": 12,
+      "chunk_total": 62
+    }
+  },
+  {
+    "question": "Why was Regex chosen over more complex retrieval models?",
+    "answer": "To avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "source_chunk": "based on regular expressions (Regex) to identify relevant snippets from the text. As shown in the\nliterature, a RAG approach proves to be more efficient and effective than providing the LLM with\nlarger context windows [13]. We opted for Regex over more complex retrieval models, such as Term\nFrequency-Inverse Document Frequency, Cohere\u2019s re-rank [14], or Instructor embeddings [15], in\norder to avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "metadata": {
+      "pages": 9,
+      "filename": "paper_033.pdf",
+      "type": "pdf",
+      "chunk_index": 12,
+      "chunk_total": 62
+    }
+  },
+  {
+    "question": "What is an alternative retrieval model to Regex?",
+    "answer": "Term Frequency-Inverse Document Frequency",
+    "source_chunk": "based on regular expressions (Regex) to identify relevant snippets from the text. As shown in the\nliterature, a RAG approach proves to be more efficient and effective than providing the LLM with\nlarger context windows [13]. We opted for Regex over more complex retrieval models, such as Term\nFrequency-Inverse Document Frequency, Cohere\u2019s re-rank [14], or Instructor embeddings [15], in\norder to avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "metadata": {
+      "pages": 9,
+      "filename": "paper_033.pdf",
+      "type": "pdf",
+      "chunk_index": 12,
+      "chunk_total": 62
+    }
+  },
+  {
+    "question": "What does RAG stand for in the context of the provided text?",
+    "answer": "Not explicitly stated in the text, but RAG typically stands for Retrieval-Augmented Generation",
+    "source_chunk": "based on regular expressions (Regex) to identify relevant snippets from the text. As shown in the\nliterature, a RAG approach proves to be more efficient and effective than providing the LLM with\nlarger context windows [13]. We opted for Regex over more complex retrieval models, such as Term\nFrequency-Inverse Document Frequency, Cohere\u2019s re-rank [14], or Instructor embeddings [15], in\norder to avoid introducing bias through additional hyperparameter tuning and to narrow the focus",
+    "metadata": {
+      "pages": 9,
+      "filename": "paper_033.pdf",
+      "type": "pdf",
+      "chunk_index": 12,
+      "chunk_total": 62
+    }
+  },
+  {
+    "question": "What dataset was used to evaluate the top-10 retrieval accuracy?",
+    "answer": "NQ dataset",
+    "source_chunk": "comparison for each benchmark dataset.\n1) Top-10 retrieval accuracy on the NQ dataset : For the\nNQ dataset [6], our empirical analysis has demonstrated the\nsuperior performance of hybrid query strategies, attributable to\nthe ability to utilize multiple data fields effectively. In Figure 2,\nour findings reveal that the hybrid query approach employing\nthe Sparse Encoder with Best Fields attains the highest\nretrieval accuracy, reaching an impressive 88.77%. This result",
+    "metadata": {
+      "pages": 7,
+      "filename": "paper_037.pdf",
+      "type": "pdf",
+      "chunk_index": 20,
+      "chunk_total": 58
+    }
+  },
+  {
+    "question": "What is the highest retrieval accuracy achieved by the hybrid query approach?",
+    "answer": "88.77%",
+    "source_chunk": "comparison for each benchmark dataset.\n1) Top-10 retrieval accuracy on the NQ dataset : For the\nNQ dataset [6], our empirical analysis has demonstrated the\nsuperior performance of hybrid query strategies, attributable to\nthe ability to utilize multiple data fields effectively. In Figure 2,\nour findings reveal that the hybrid query approach employing\nthe Sparse Encoder with Best Fields attains the highest\nretrieval accuracy, reaching an impressive 88.77%. This result",
+    "metadata": {
+      "pages": 7,
+      "filename": "paper_037.pdf",
+      "type": "pdf",
+      "chunk_index": 20,
+      "chunk_total": 58
+    }
+  },
+  {
+    "question": "What encoder was used in the hybrid query approach with the highest retrieval accuracy?",
+    "answer": "Sparse Encoder",
+    "source_chunk": "comparison for each benchmark dataset.\n1) Top-10 retrieval accuracy on the NQ dataset : For the\nNQ dataset [6], our empirical analysis has demonstrated the\nsuperior performance of hybrid query strategies, attributable to\nthe ability to utilize multiple data fields effectively. In Figure 2,\nour findings reveal that the hybrid query approach employing\nthe Sparse Encoder with Best Fields attains the highest\nretrieval accuracy, reaching an impressive 88.77%. This result",
+    "metadata": {
+      "pages": 7,
+      "filename": "paper_037.pdf",
+      "type": "pdf",
+      "chunk_index": 20,
+      "chunk_total": 58
+    }
+  },
+  {
+    "question": "What is the name of the fields used in the hybrid query approach with the highest retrieval accuracy?",
+    "answer": "Best Fields",
+    "source_chunk": "comparison for each benchmark dataset.\n1) Top-10 retrieval accuracy on the NQ dataset : For the\nNQ dataset [6], our empirical analysis has demonstrated the\nsuperior performance of hybrid query strategies, attributable to\nthe ability to utilize multiple data fields effectively. In Figure 2,\nour findings reveal that the hybrid query approach employing\nthe Sparse Encoder with Best Fields attains the highest\nretrieval accuracy, reaching an impressive 88.77%. This result",
+    "metadata": {
+      "pages": 7,
+      "filename": "paper_037.pdf",
+      "type": "pdf",
+      "chunk_index": 20,
+      "chunk_total": 58
+    }
+  },
+  {
+    "question": "What is the figure number that reveals the findings of the hybrid query approach?",
+    "answer": "Figure 2",
+    "source_chunk": "comparison for each benchmark dataset.\n1) Top-10 retrieval accuracy on the NQ dataset : For the\nNQ dataset [6], our empirical analysis has demonstrated the\nsuperior performance of hybrid query strategies, attributable to\nthe ability to utilize multiple data fields effectively. In Figure 2,\nour findings reveal that the hybrid query approach employing\nthe Sparse Encoder with Best Fields attains the highest\nretrieval accuracy, reaching an impressive 88.77%. This result",
+    "metadata": {
+      "pages": 7,
+      "filename": "paper_037.pdf",
+      "type": "pdf",
+      "chunk_index": 20,
+      "chunk_total": 58
+    }
+  },
+  {
+    "question": "What are the first two numbers mentioned in the text?",
+    "answer": "51.22 and 67.35",
+    "source_chunk": "51.22 67.35\nCosine similarity - CLIPL\nNo-LLM\n32.61 51.28\n30.67 48.63\n31.97 49.48\n31.10 49.30\n35.64 52.69\n34.56 52.87\n37.80 55.75\n35.42 52.64\nexact\n35.33 53.38\n35.93 53.18\n36.83 54.49\n34.13 52.73\n43.11 58.87\n36.83 54.83\n42.22 59.53\n38.92 55.96\nwhat_is\n36.53 55.41\n37.00 54.44\n38.41 55.33\n37.24 55.40\n41.22 57.77\n39.34 56.80\n44.03 61.02\n37.70 55.53\ndescribe\n37.91 55.86\n39.81 56.24\n38.86 57.39\n40.76 57.42\n40.28 57.13\n43.60 59.62\n47.39 64.94\n40.76 58.52\nmeaning_of\n38.14 56.00\n36.36 53.56\n36.81 54.32\n36.14 54.69",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 161,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the term mentioned after the numbers 32.61 and 51.28?",
+    "answer": "No-LLM",
+    "source_chunk": "51.22 67.35\nCosine similarity - CLIPL\nNo-LLM\n32.61 51.28\n30.67 48.63\n31.97 49.48\n31.10 49.30\n35.64 52.69\n34.56 52.87\n37.80 55.75\n35.42 52.64\nexact\n35.33 53.38\n35.93 53.18\n36.83 54.49\n34.13 52.73\n43.11 58.87\n36.83 54.83\n42.22 59.53\n38.92 55.96\nwhat_is\n36.53 55.41\n37.00 54.44\n38.41 55.33\n37.24 55.40\n41.22 57.77\n39.34 56.80\n44.03 61.02\n37.70 55.53\ndescribe\n37.91 55.86\n39.81 56.24\n38.86 57.39\n40.76 57.42\n40.28 57.13\n43.60 59.62\n47.39 64.94\n40.76 58.52\nmeaning_of\n38.14 56.00\n36.36 53.56\n36.81 54.32\n36.14 54.69",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 161,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the term mentioned after the numbers 35.33 and 53.38?",
+    "answer": "exact",
+    "source_chunk": "51.22 67.35\nCosine similarity - CLIPL\nNo-LLM\n32.61 51.28\n30.67 48.63\n31.97 49.48\n31.10 49.30\n35.64 52.69\n34.56 52.87\n37.80 55.75\n35.42 52.64\nexact\n35.33 53.38\n35.93 53.18\n36.83 54.49\n34.13 52.73\n43.11 58.87\n36.83 54.83\n42.22 59.53\n38.92 55.96\nwhat_is\n36.53 55.41\n37.00 54.44\n38.41 55.33\n37.24 55.40\n41.22 57.77\n39.34 56.80\n44.03 61.02\n37.70 55.53\ndescribe\n37.91 55.86\n39.81 56.24\n38.86 57.39\n40.76 57.42\n40.28 57.13\n43.60 59.62\n47.39 64.94\n40.76 58.52\nmeaning_of\n38.14 56.00\n36.36 53.56\n36.81 54.32\n36.14 54.69",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 161,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What are the numbers mentioned after the term 'what_is'?",
+    "answer": "36.53 and 55.41",
+    "source_chunk": "51.22 67.35\nCosine similarity - CLIPL\nNo-LLM\n32.61 51.28\n30.67 48.63\n31.97 49.48\n31.10 49.30\n35.64 52.69\n34.56 52.87\n37.80 55.75\n35.42 52.64\nexact\n35.33 53.38\n35.93 53.18\n36.83 54.49\n34.13 52.73\n43.11 58.87\n36.83 54.83\n42.22 59.53\n38.92 55.96\nwhat_is\n36.53 55.41\n37.00 54.44\n38.41 55.33\n37.24 55.40\n41.22 57.77\n39.34 56.80\n44.03 61.02\n37.70 55.53\ndescribe\n37.91 55.86\n39.81 56.24\n38.86 57.39\n40.76 57.42\n40.28 57.13\n43.60 59.62\n47.39 64.94\n40.76 58.52\nmeaning_of\n38.14 56.00\n36.36 53.56\n36.81 54.32\n36.14 54.69",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 161,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the term mentioned after the numbers 37.91 and 55.86?",
+    "answer": "describe",
+    "source_chunk": "51.22 67.35\nCosine similarity - CLIPL\nNo-LLM\n32.61 51.28\n30.67 48.63\n31.97 49.48\n31.10 49.30\n35.64 52.69\n34.56 52.87\n37.80 55.75\n35.42 52.64\nexact\n35.33 53.38\n35.93 53.18\n36.83 54.49\n34.13 52.73\n43.11 58.87\n36.83 54.83\n42.22 59.53\n38.92 55.96\nwhat_is\n36.53 55.41\n37.00 54.44\n38.41 55.33\n37.24 55.40\n41.22 57.77\n39.34 56.80\n44.03 61.02\n37.70 55.53\ndescribe\n37.91 55.86\n39.81 56.24\n38.86 57.39\n40.76 57.42\n40.28 57.13\n43.60 59.62\n47.39 64.94\n40.76 58.52\nmeaning_of\n38.14 56.00\n36.36 53.56\n36.81 54.32\n36.14 54.69",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 161,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the name of the open-source chatbot that impresses GPT-4 with 90% ChatGPT quality?",
+    "answer": "Vicuna",
+    "source_chunk": "S. Zhuang, Y. Zhuang, J. E. Gonzalez et al., \u201cVicuna: An\nopen-source chatbot impressing gpt-4 with 90% chatgpt quality,\u201d\n2023. [Online]. Available: https://vicuna.lmsys.org 1, 3, 4\n[5]\nH. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux,\nT. Lacroix, B. Rozi\u00e8re, N. Goyal, E. Hambro, F. Azhar et al.,\n\u201cLlama: Open and efficient foundation language models,\u201d\narXiv:2302.13971, 2023. 1, 3, 4\n[6]\nB. Peng, C. Li, P. He, M. Galley, and J. Gao, \u201cInstruction tuning\nwith gpt-4,\u201d arXiv:2304.03277, 2023. 1\n[7]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 167,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the name of the foundation language models described by H. Touvron et al.?",
+    "answer": "Llama",
+    "source_chunk": "S. Zhuang, Y. Zhuang, J. E. Gonzalez et al., \u201cVicuna: An\nopen-source chatbot impressing gpt-4 with 90% chatgpt quality,\u201d\n2023. [Online]. Available: https://vicuna.lmsys.org 1, 3, 4\n[5]\nH. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux,\nT. Lacroix, B. Rozi\u00e8re, N. Goyal, E. Hambro, F. Azhar et al.,\n\u201cLlama: Open and efficient foundation language models,\u201d\narXiv:2302.13971, 2023. 1, 3, 4\n[6]\nB. Peng, C. Li, P. He, M. Galley, and J. Gao, \u201cInstruction tuning\nwith gpt-4,\u201d arXiv:2304.03277, 2023. 1\n[7]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 167,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "In what year was the Vicuna chatbot described by S. Zhuang et al.?",
+    "answer": "2023",
+    "source_chunk": "S. Zhuang, Y. Zhuang, J. E. Gonzalez et al., \u201cVicuna: An\nopen-source chatbot impressing gpt-4 with 90% chatgpt quality,\u201d\n2023. [Online]. Available: https://vicuna.lmsys.org 1, 3, 4\n[5]\nH. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux,\nT. Lacroix, B. Rozi\u00e8re, N. Goyal, E. Hambro, F. Azhar et al.,\n\u201cLlama: Open and efficient foundation language models,\u201d\narXiv:2302.13971, 2023. 1, 3, 4\n[6]\nB. Peng, C. Li, P. He, M. Galley, and J. Gao, \u201cInstruction tuning\nwith gpt-4,\u201d arXiv:2304.03277, 2023. 1\n[7]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 167,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the title of the paper by B. Peng et al.?",
+    "answer": "Instruction tuning with GPT-4",
+    "source_chunk": "S. Zhuang, Y. Zhuang, J. E. Gonzalez et al., \u201cVicuna: An\nopen-source chatbot impressing gpt-4 with 90% chatgpt quality,\u201d\n2023. [Online]. Available: https://vicuna.lmsys.org 1, 3, 4\n[5]\nH. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux,\nT. Lacroix, B. Rozi\u00e8re, N. Goyal, E. Hambro, F. Azhar et al.,\n\u201cLlama: Open and efficient foundation language models,\u201d\narXiv:2302.13971, 2023. 1, 3, 4\n[6]\nB. Peng, C. Li, P. He, M. Galley, and J. Gao, \u201cInstruction tuning\nwith gpt-4,\u201d arXiv:2304.03277, 2023. 1\n[7]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 167,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "Where can information about Vicuna be found online?",
+    "answer": "https://vicuna.lmsys.org",
+    "source_chunk": "S. Zhuang, Y. Zhuang, J. E. Gonzalez et al., \u201cVicuna: An\nopen-source chatbot impressing gpt-4 with 90% chatgpt quality,\u201d\n2023. [Online]. Available: https://vicuna.lmsys.org 1, 3, 4\n[5]\nH. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux,\nT. Lacroix, B. Rozi\u00e8re, N. Goyal, E. Hambro, F. Azhar et al.,\n\u201cLlama: Open and efficient foundation language models,\u201d\narXiv:2302.13971, 2023. 1, 3, 4\n[6]\nB. Peng, C. Li, P. He, M. Galley, and J. Gao, \u201cInstruction tuning\nwith gpt-4,\u201d arXiv:2304.03277, 2023. 1\n[7]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 167,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the size of the bge-large-en model in parameters?",
+    "answer": "335M",
+    "source_chunk": "89.2\n54.0\nbge-large-en (335M) (2024)\n17.5\n-7.8\n22.3\n0.6\n15.0\n0.1\n18.3\n-2.4\n18.8\n22.9\n35.5\n17.8\n26.3\n24.3\nflan-t5-large (783M) (2022)\n14.7\n3.9\n8.0\n8.9\n11.4\n1.3\n11.4\n4.7\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\nLarge Size: 1-5B parameters\nInF-Embed (Llama-3.2-1B)\n16.8\n6.0\n20.8\n0.7\n13.9\n3.8\n17.2\n3.5\n50.5\n36.8\n36.7\n57.1\n87.0\n53.6\nInF-Embed (Qwen2.5-1.5B)\n16.8\n4.9\n14.1\n2.7\n12.7\n1.9\n14.5\n3.2\n44.2\n23.4\n35.4\n52.6\n85.1\n48.1\ninstructor-xl (1.5B) (2023)\n19.7\n-8.1\n26.1\n-0.9\n16.8\n0.7\n20.9\n-2.8\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\ntart-flan-t5-xl (2.85B) (2022)\n24.6\n-0.7",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_013.pdf",
+      "type": "pdf",
+      "chunk_index": 160,
+      "chunk_total": 188
+    }
+  },
+  {
+    "question": "In what year was the flan-t5-large model released?",
+    "answer": "2022",
+    "source_chunk": "89.2\n54.0\nbge-large-en (335M) (2024)\n17.5\n-7.8\n22.3\n0.6\n15.0\n0.1\n18.3\n-2.4\n18.8\n22.9\n35.5\n17.8\n26.3\n24.3\nflan-t5-large (783M) (2022)\n14.7\n3.9\n8.0\n8.9\n11.4\n1.3\n11.4\n4.7\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\nLarge Size: 1-5B parameters\nInF-Embed (Llama-3.2-1B)\n16.8\n6.0\n20.8\n0.7\n13.9\n3.8\n17.2\n3.5\n50.5\n36.8\n36.7\n57.1\n87.0\n53.6\nInF-Embed (Qwen2.5-1.5B)\n16.8\n4.9\n14.1\n2.7\n12.7\n1.9\n14.5\n3.2\n44.2\n23.4\n35.4\n52.6\n85.1\n48.1\ninstructor-xl (1.5B) (2023)\n19.7\n-8.1\n26.1\n-0.9\n16.8\n0.7\n20.9\n-2.8\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\ntart-flan-t5-xl (2.85B) (2022)\n24.6\n-0.7",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_013.pdf",
+      "type": "pdf",
+      "chunk_index": 160,
+      "chunk_total": 188
+    }
+  },
+  {
+    "question": "What is the size of the Large Size models?",
+    "answer": "1-5B parameters",
+    "source_chunk": "89.2\n54.0\nbge-large-en (335M) (2024)\n17.5\n-7.8\n22.3\n0.6\n15.0\n0.1\n18.3\n-2.4\n18.8\n22.9\n35.5\n17.8\n26.3\n24.3\nflan-t5-large (783M) (2022)\n14.7\n3.9\n8.0\n8.9\n11.4\n1.3\n11.4\n4.7\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\nLarge Size: 1-5B parameters\nInF-Embed (Llama-3.2-1B)\n16.8\n6.0\n20.8\n0.7\n13.9\n3.8\n17.2\n3.5\n50.5\n36.8\n36.7\n57.1\n87.0\n53.6\nInF-Embed (Qwen2.5-1.5B)\n16.8\n4.9\n14.1\n2.7\n12.7\n1.9\n14.5\n3.2\n44.2\n23.4\n35.4\n52.6\n85.1\n48.1\ninstructor-xl (1.5B) (2023)\n19.7\n-8.1\n26.1\n-0.9\n16.8\n0.7\n20.9\n-2.8\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\ntart-flan-t5-xl (2.85B) (2022)\n24.6\n-0.7",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_013.pdf",
+      "type": "pdf",
+      "chunk_index": 160,
+      "chunk_total": 188
+    }
+  },
+  {
+    "question": "What is the size of the instructor-xl model in parameters?",
+    "answer": "1.5B",
+    "source_chunk": "89.2\n54.0\nbge-large-en (335M) (2024)\n17.5\n-7.8\n22.3\n0.6\n15.0\n0.1\n18.3\n-2.4\n18.8\n22.9\n35.5\n17.8\n26.3\n24.3\nflan-t5-large (783M) (2022)\n14.7\n3.9\n8.0\n8.9\n11.4\n1.3\n11.4\n4.7\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\nLarge Size: 1-5B parameters\nInF-Embed (Llama-3.2-1B)\n16.8\n6.0\n20.8\n0.7\n13.9\n3.8\n17.2\n3.5\n50.5\n36.8\n36.7\n57.1\n87.0\n53.6\nInF-Embed (Qwen2.5-1.5B)\n16.8\n4.9\n14.1\n2.7\n12.7\n1.9\n14.5\n3.2\n44.2\n23.4\n35.4\n52.6\n85.1\n48.1\ninstructor-xl (1.5B) (2023)\n19.7\n-8.1\n26.1\n-0.9\n16.8\n0.7\n20.9\n-2.8\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\ntart-flan-t5-xl (2.85B) (2022)\n24.6\n-0.7",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_013.pdf",
+      "type": "pdf",
+      "chunk_index": 160,
+      "chunk_total": 188
+    }
+  },
+  {
+    "question": "In what year was the instructor-xl model released?",
+    "answer": "2023",
+    "source_chunk": "89.2\n54.0\nbge-large-en (335M) (2024)\n17.5\n-7.8\n22.3\n0.6\n15.0\n0.1\n18.3\n-2.4\n18.8\n22.9\n35.5\n17.8\n26.3\n24.3\nflan-t5-large (783M) (2022)\n14.7\n3.9\n8.0\n8.9\n11.4\n1.3\n11.4\n4.7\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\nLarge Size: 1-5B parameters\nInF-Embed (Llama-3.2-1B)\n16.8\n6.0\n20.8\n0.7\n13.9\n3.8\n17.2\n3.5\n50.5\n36.8\n36.7\n57.1\n87.0\n53.6\nInF-Embed (Qwen2.5-1.5B)\n16.8\n4.9\n14.1\n2.7\n12.7\n1.9\n14.5\n3.2\n44.2\n23.4\n35.4\n52.6\n85.1\n48.1\ninstructor-xl (1.5B) (2023)\n19.7\n-8.1\n26.1\n-0.9\n16.8\n0.7\n20.9\n-2.8\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\n\u2013\ntart-flan-t5-xl (2.85B) (2022)\n24.6\n-0.7",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_013.pdf",
+      "type": "pdf",
+      "chunk_index": 160,
+      "chunk_total": 188
+    }
+  },
+  {
+    "question": "What does T \u2032 represent in the given equation?",
+    "answer": "The truncated output",
+    "source_chunk": "mentation:\nT \u2032 = truncate(T, ti),\n(6)\nwhere T \u2032 represents the truncated output, T is the\noriginal sequence generated by the LLM, and ti\nis the token at which the need for external knowl-\nedge was identified by RIND. To integrate the re-\ntrieved knowledge Di1, Di2, and Di3, we adopt a\nmeticulously designed prompt template 3, which is\nstructured as follows:\nThe entire input for LLM:\nBelow are the external knowledge refer-\nences:\n[1] Di1\n[2] Di2\n[3] Di3\nPlease answer the question based on the",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_035.pdf",
+      "type": "pdf",
+      "chunk_index": 40,
+      "chunk_total": 179
+    }
+  },
+  {
+    "question": "What is the purpose of RIND?",
+    "answer": "To identify the need for external knowledge",
+    "source_chunk": "mentation:\nT \u2032 = truncate(T, ti),\n(6)\nwhere T \u2032 represents the truncated output, T is the\noriginal sequence generated by the LLM, and ti\nis the token at which the need for external knowl-\nedge was identified by RIND. To integrate the re-\ntrieved knowledge Di1, Di2, and Di3, we adopt a\nmeticulously designed prompt template 3, which is\nstructured as follows:\nThe entire input for LLM:\nBelow are the external knowledge refer-\nences:\n[1] Di1\n[2] Di2\n[3] Di3\nPlease answer the question based on the",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_035.pdf",
+      "type": "pdf",
+      "chunk_index": 40,
+      "chunk_total": 179
+    }
+  },
+  {
+    "question": "What is used to integrate the retrieved knowledge?",
+    "answer": "A meticulously designed prompt template",
+    "source_chunk": "mentation:\nT \u2032 = truncate(T, ti),\n(6)\nwhere T \u2032 represents the truncated output, T is the\noriginal sequence generated by the LLM, and ti\nis the token at which the need for external knowl-\nedge was identified by RIND. To integrate the re-\ntrieved knowledge Di1, Di2, and Di3, we adopt a\nmeticulously designed prompt template 3, which is\nstructured as follows:\nThe entire input for LLM:\nBelow are the external knowledge refer-\nences:\n[1] Di1\n[2] Di2\n[3] Di3\nPlease answer the question based on the",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_035.pdf",
+      "type": "pdf",
+      "chunk_index": 40,
+      "chunk_total": 179
+    }
+  },
+  {
+    "question": "How are the external knowledge references structured in the prompt template?",
+    "answer": "As a numbered list",
+    "source_chunk": "mentation:\nT \u2032 = truncate(T, ti),\n(6)\nwhere T \u2032 represents the truncated output, T is the\noriginal sequence generated by the LLM, and ti\nis the token at which the need for external knowl-\nedge was identified by RIND. To integrate the re-\ntrieved knowledge Di1, Di2, and Di3, we adopt a\nmeticulously designed prompt template 3, which is\nstructured as follows:\nThe entire input for LLM:\nBelow are the external knowledge refer-\nences:\n[1] Di1\n[2] Di2\n[3] Di3\nPlease answer the question based on the",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_035.pdf",
+      "type": "pdf",
+      "chunk_index": 40,
+      "chunk_total": 179
+    }
+  },
+  {
+    "question": "What is the LLM asked to do based on the provided information?",
+    "answer": "Answer the question based on the provided knowledge references",
+    "source_chunk": "mentation:\nT \u2032 = truncate(T, ti),\n(6)\nwhere T \u2032 represents the truncated output, T is the\noriginal sequence generated by the LLM, and ti\nis the token at which the need for external knowl-\nedge was identified by RIND. To integrate the re-\ntrieved knowledge Di1, Di2, and Di3, we adopt a\nmeticulously designed prompt template 3, which is\nstructured as follows:\nThe entire input for LLM:\nBelow are the external knowledge refer-\nences:\n[1] Di1\n[2] Di2\n[3] Di3\nPlease answer the question based on the",
+    "metadata": {
+      "pages": 23,
+      "filename": "paper_035.pdf",
+      "type": "pdf",
+      "chunk_index": 40,
+      "chunk_total": 179
+    }
+  },
+  {
+    "question": "What percentage of queries were sampled from WikiPassageQA?",
+    "answer": "50%",
+    "source_chunk": "we empirically verify this property in our setting by sam-\npling \u223c50% queries from WikiPassageQA and enumerating\ndiverse chunk combinations to collect reranker score, quality\n(ROUGE-L) pairs. As shown in Figure 8, we observe a\nPearson correlation [68] of r=0.83, confirming that reranker-\nassigned benefits reliably reflect downstream quality.\n(2) Impact of Chunk Candidate Counts. As shown in\nFigure 9, our analysis of chunk candidate counts on WikiPas-\nsageQA demonstrates that CARROT achieves high response",
+    "metadata": {
+      "pages": 14,
+      "filename": "paper_032.pdf",
+      "type": "pdf",
+      "chunk_index": 146,
+      "chunk_total": 190
+    }
+  },
+  {
+    "question": "What type of correlation was observed between reranker-assigned benefits and downstream quality?",
+    "answer": "Pearson correlation",
+    "source_chunk": "we empirically verify this property in our setting by sam-\npling \u223c50% queries from WikiPassageQA and enumerating\ndiverse chunk combinations to collect reranker score, quality\n(ROUGE-L) pairs. As shown in Figure 8, we observe a\nPearson correlation [68] of r=0.83, confirming that reranker-\nassigned benefits reliably reflect downstream quality.\n(2) Impact of Chunk Candidate Counts. As shown in\nFigure 9, our analysis of chunk candidate counts on WikiPas-\nsageQA demonstrates that CARROT achieves high response",
+    "metadata": {
+      "pages": 14,
+      "filename": "paper_032.pdf",
+      "type": "pdf",
+      "chunk_index": 146,
+      "chunk_total": 190
+    }
+  },
+  {
+    "question": "What is the value of the Pearson correlation coefficient?",
+    "answer": "0.83",
+    "source_chunk": "we empirically verify this property in our setting by sam-\npling \u223c50% queries from WikiPassageQA and enumerating\ndiverse chunk combinations to collect reranker score, quality\n(ROUGE-L) pairs. As shown in Figure 8, we observe a\nPearson correlation [68] of r=0.83, confirming that reranker-\nassigned benefits reliably reflect downstream quality.\n(2) Impact of Chunk Candidate Counts. As shown in\nFigure 9, our analysis of chunk candidate counts on WikiPas-\nsageQA demonstrates that CARROT achieves high response",
+    "metadata": {
+      "pages": 14,
+      "filename": "paper_032.pdf",
+      "type": "pdf",
+      "chunk_index": 146,
+      "chunk_total": 190
+    }
+  },
+  {
+    "question": "What metric is used to measure the quality of the responses?",
+    "answer": "ROUGE-L",
+    "source_chunk": "we empirically verify this property in our setting by sam-\npling \u223c50% queries from WikiPassageQA and enumerating\ndiverse chunk combinations to collect reranker score, quality\n(ROUGE-L) pairs. As shown in Figure 8, we observe a\nPearson correlation [68] of r=0.83, confirming that reranker-\nassigned benefits reliably reflect downstream quality.\n(2) Impact of Chunk Candidate Counts. As shown in\nFigure 9, our analysis of chunk candidate counts on WikiPas-\nsageQA demonstrates that CARROT achieves high response",
+    "metadata": {
+      "pages": 14,
+      "filename": "paper_032.pdf",
+      "type": "pdf",
+      "chunk_index": 146,
+      "chunk_total": 190
+    }
+  },
+  {
+    "question": "What figure shows the impact of chunk candidate counts on WikiPassageQA?",
+    "answer": "Figure 9",
+    "source_chunk": "we empirically verify this property in our setting by sam-\npling \u223c50% queries from WikiPassageQA and enumerating\ndiverse chunk combinations to collect reranker score, quality\n(ROUGE-L) pairs. As shown in Figure 8, we observe a\nPearson correlation [68] of r=0.83, confirming that reranker-\nassigned benefits reliably reflect downstream quality.\n(2) Impact of Chunk Candidate Counts. As shown in\nFigure 9, our analysis of chunk candidate counts on WikiPas-\nsageQA demonstrates that CARROT achieves high response",
+    "metadata": {
+      "pages": 14,
+      "filename": "paper_032.pdf",
+      "type": "pdf",
+      "chunk_index": 146,
+      "chunk_total": 190
+    }
+  },
+  {
+    "question": "Who proposed a prompt-tuning method in 2022?",
+    "answer": "Cao et al.",
+    "source_chunk": "ers. More recently, Cao et al. (2022) proposed a\nprompt-tuning method with the meme text and im-\nage caption as the prompt for masked language\nmodeling (Devlin et al., 2019; Liu et al., 2019).\nHowever, existing harmful meme detection ap-\nproaches oversimplified the problem as an end-to-\nend classification paradigm, which only recognizes\nthe superficial signals conveyed through the sur-\nface text and image. But more in-depth investi-\ngation and cognition on the implicit meaning is",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_041.pdf",
+      "type": "pdf",
+      "chunk_index": 7,
+      "chunk_total": 145
+    }
+  },
+  {
+    "question": "What year was the prompt-tuning method proposed?",
+    "answer": "2022",
+    "source_chunk": "ers. More recently, Cao et al. (2022) proposed a\nprompt-tuning method with the meme text and im-\nage caption as the prompt for masked language\nmodeling (Devlin et al., 2019; Liu et al., 2019).\nHowever, existing harmful meme detection ap-\nproaches oversimplified the problem as an end-to-\nend classification paradigm, which only recognizes\nthe superficial signals conveyed through the sur-\nface text and image. But more in-depth investi-\ngation and cognition on the implicit meaning is",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_041.pdf",
+      "type": "pdf",
+      "chunk_index": 7,
+      "chunk_total": 145
+    }
+  },
+  {
+    "question": "What type of modeling uses the meme text and image caption as a prompt?",
+    "answer": "Masked language modeling",
+    "source_chunk": "ers. More recently, Cao et al. (2022) proposed a\nprompt-tuning method with the meme text and im-\nage caption as the prompt for masked language\nmodeling (Devlin et al., 2019; Liu et al., 2019).\nHowever, existing harmful meme detection ap-\nproaches oversimplified the problem as an end-to-\nend classification paradigm, which only recognizes\nthe superficial signals conveyed through the sur-\nface text and image. But more in-depth investi-\ngation and cognition on the implicit meaning is",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_041.pdf",
+      "type": "pdf",
+      "chunk_index": 7,
+      "chunk_total": 145
+    }
+  },
+  {
+    "question": "Who developed masked language modeling?",
+    "answer": "Devlin et al. and Liu et al.",
+    "source_chunk": "ers. More recently, Cao et al. (2022) proposed a\nprompt-tuning method with the meme text and im-\nage caption as the prompt for masked language\nmodeling (Devlin et al., 2019; Liu et al., 2019).\nHowever, existing harmful meme detection ap-\nproaches oversimplified the problem as an end-to-\nend classification paradigm, which only recognizes\nthe superficial signals conveyed through the sur-\nface text and image. But more in-depth investi-\ngation and cognition on the implicit meaning is",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_041.pdf",
+      "type": "pdf",
+      "chunk_index": 7,
+      "chunk_total": 145
+    }
+  },
+  {
+    "question": "What type of paradigm do existing harmful meme detection approaches use?",
+    "answer": "End-to-end classification paradigm",
+    "source_chunk": "ers. More recently, Cao et al. (2022) proposed a\nprompt-tuning method with the meme text and im-\nage caption as the prompt for masked language\nmodeling (Devlin et al., 2019; Liu et al., 2019).\nHowever, existing harmful meme detection ap-\nproaches oversimplified the problem as an end-to-\nend classification paradigm, which only recognizes\nthe superficial signals conveyed through the sur-\nface text and image. But more in-depth investi-\ngation and cognition on the implicit meaning is",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_041.pdf",
+      "type": "pdf",
+      "chunk_index": 7,
+      "chunk_total": 145
+    }
+  },
+  {
+    "question": "What is the topic of the technical report?",
+    "answer": "Literature reviews in software engineering",
+    "source_chunk": "literature reviews in software engineering,\u201d Tech.\nRep.\nEBSE 2007-001,\nKeele University and Durham University, 2007.\n65",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 279,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the report number of the technical report?",
+    "answer": "EBSE 2007-001",
+    "source_chunk": "literature reviews in software engineering,\u201d Tech.\nRep.\nEBSE 2007-001,\nKeele University and Durham University, 2007.\n65",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 279,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "Which universities are associated with the technical report?",
+    "answer": "Keele University and Durham University",
+    "source_chunk": "literature reviews in software engineering,\u201d Tech.\nRep.\nEBSE 2007-001,\nKeele University and Durham University, 2007.\n65",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 279,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "In what year was the technical report published?",
+    "answer": "2007",
+    "source_chunk": "literature reviews in software engineering,\u201d Tech.\nRep.\nEBSE 2007-001,\nKeele University and Durham University, 2007.\n65",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 279,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "How many pages or references are mentioned at the end of the text?",
+    "answer": "65",
+    "source_chunk": "literature reviews in software engineering,\u201d Tech.\nRep.\nEBSE 2007-001,\nKeele University and Durham University, 2007.\n65",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 279,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the title of the paper by Shunyu Yao et al. published in 2022?",
+    "answer": "React: Synergizing reasoning and acting in language models",
+    "source_chunk": "Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Pro-\ncessing Systems, 35:24824\u201324837, 2022.\n[9] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. React: Syner-\ngizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629, 2022.\n[10] Harrison Chase. LangChain, October 2022.\n[11] Jerry Liu. LlamaIndex, November 2022.\n[12] Microsoft. semantic-kernel, 2023.",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 227,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "In what year was the paper 'Chain-of-thought prompting elicits reasoning in large language models' published?",
+    "answer": "2022",
+    "source_chunk": "Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Pro-\ncessing Systems, 35:24824\u201324837, 2022.\n[9] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. React: Syner-\ngizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629, 2022.\n[10] Harrison Chase. LangChain, October 2022.\n[11] Jerry Liu. LlamaIndex, November 2022.\n[12] Microsoft. semantic-kernel, 2023.",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 227,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "Who published LangChain in October 2022?",
+    "answer": "Harrison Chase",
+    "source_chunk": "Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Pro-\ncessing Systems, 35:24824\u201324837, 2022.\n[9] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. React: Syner-\ngizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629, 2022.\n[10] Harrison Chase. LangChain, October 2022.\n[11] Jerry Liu. LlamaIndex, November 2022.\n[12] Microsoft. semantic-kernel, 2023.",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 227,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "When was LlamaIndex published by Jerry Liu?",
+    "answer": "November 2022",
+    "source_chunk": "Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Pro-\ncessing Systems, 35:24824\u201324837, 2022.\n[9] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. React: Syner-\ngizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629, 2022.\n[10] Harrison Chase. LangChain, October 2022.\n[11] Jerry Liu. LlamaIndex, November 2022.\n[12] Microsoft. semantic-kernel, 2023.",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 227,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What is the name of the project published by Microsoft in 2023?",
+    "answer": "semantic-kernel",
+    "source_chunk": "Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Pro-\ncessing Systems, 35:24824\u201324837, 2022.\n[9] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. React: Syner-\ngizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629, 2022.\n[10] Harrison Chase. LangChain, October 2022.\n[11] Jerry Liu. LlamaIndex, November 2022.\n[12] Microsoft. semantic-kernel, 2023.",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 227,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What is the title of the dataset mentioned in reference [93]?",
+    "answer": "Msr-vtt: A large video description dataset for bridging video and language",
+    "source_chunk": "arXiv:2402.11684, 2024. 5, 7\n[93]\nJ. Xu, T. Mei, T. Yao, and Y. Rui, \u201cMsr-vtt: A large video descrip-\ntion dataset for bridging video and language,\u201d in CVPR, 2016.\n5\n[94]\nX. Mei, C. Meng, H. Liu, Q. Kong, T. Ko, C. Zhao, M. D. Plumbley,\nY. Zou, and W. Wang, \u201cWavcaps: A chatgpt-assisted weakly-\nlabelled audio captioning dataset for audio-language multimodal\nresearch,\u201d arXiv:2303.17395, 2023. 5\n[95]\nL. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 202,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "In what year was the paper 'Msr-vtt: A large video description dataset for bridging video and language' published?",
+    "answer": "2016",
+    "source_chunk": "arXiv:2402.11684, 2024. 5, 7\n[93]\nJ. Xu, T. Mei, T. Yao, and Y. Rui, \u201cMsr-vtt: A large video descrip-\ntion dataset for bridging video and language,\u201d in CVPR, 2016.\n5\n[94]\nX. Mei, C. Meng, H. Liu, Q. Kong, T. Ko, C. Zhao, M. D. Plumbley,\nY. Zou, and W. Wang, \u201cWavcaps: A chatgpt-assisted weakly-\nlabelled audio captioning dataset for audio-language multimodal\nresearch,\u201d arXiv:2303.17395, 2023. 5\n[95]\nL. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 202,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the name of the dataset mentioned in reference [94]?",
+    "answer": "Wavcaps",
+    "source_chunk": "arXiv:2402.11684, 2024. 5, 7\n[93]\nJ. Xu, T. Mei, T. Yao, and Y. Rui, \u201cMsr-vtt: A large video descrip-\ntion dataset for bridging video and language,\u201d in CVPR, 2016.\n5\n[94]\nX. Mei, C. Meng, H. Liu, Q. Kong, T. Ko, C. Zhao, M. D. Plumbley,\nY. Zou, and W. Wang, \u201cWavcaps: A chatgpt-assisted weakly-\nlabelled audio captioning dataset for audio-language multimodal\nresearch,\u201d arXiv:2303.17395, 2023. 5\n[95]\nL. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 202,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the name of the conference where the paper 'Msr-vtt: A large video description dataset for bridging video and language' was published?",
+    "answer": "CVPR",
+    "source_chunk": "arXiv:2402.11684, 2024. 5, 7\n[93]\nJ. Xu, T. Mei, T. Yao, and Y. Rui, \u201cMsr-vtt: A large video descrip-\ntion dataset for bridging video and language,\u201d in CVPR, 2016.\n5\n[94]\nX. Mei, C. Meng, H. Liu, Q. Kong, T. Ko, C. Zhao, M. D. Plumbley,\nY. Zou, and W. Wang, \u201cWavcaps: A chatgpt-assisted weakly-\nlabelled audio captioning dataset for audio-language multimodal\nresearch,\u201d arXiv:2303.17395, 2023. 5\n[95]\nL. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 202,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the year of publication of the paper with arXiv number 2303.17395?",
+    "answer": "2023",
+    "source_chunk": "arXiv:2402.11684, 2024. 5, 7\n[93]\nJ. Xu, T. Mei, T. Yao, and Y. Rui, \u201cMsr-vtt: A large video descrip-\ntion dataset for bridging video and language,\u201d in CVPR, 2016.\n5\n[94]\nX. Mei, C. Meng, H. Liu, Q. Kong, T. Ko, C. Zhao, M. D. Plumbley,\nY. Zou, and W. Wang, \u201cWavcaps: A chatgpt-assisted weakly-\nlabelled audio captioning dataset for audio-language multimodal\nresearch,\u201d arXiv:2303.17395, 2023. 5\n[95]\nL. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 202,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the title of the paper by Wonjae Kim, Bokyung Son, and Ildoo Kim?",
+    "answer": "Vilt: Vision-and-language transformer without convolution or region supervision",
+    "source_chunk": "decision tree. In Advances in Neural Information\nProcessing Systems, volume 30. Curran Associates,\nInc.\nWonjae Kim, Bokyung Son, and Ildoo Kim. 2021. Vilt:\nVision-and-language transformer without convolu-\ntion or region supervision.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yu-\ntaka Matsuo, and Yusuke Iwasawa. 2023. Large lan-\nguage models are zero-shot reasoners.\nAnastasia Kritharoula, Maria Lymperaiou, and Giorgos\nStamou. 2023. Language models as knowledge bases",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 95,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "In what year was the paper by Takeshi Kojima et al. published?",
+    "answer": "2023",
+    "source_chunk": "decision tree. In Advances in Neural Information\nProcessing Systems, volume 30. Curran Associates,\nInc.\nWonjae Kim, Bokyung Son, and Ildoo Kim. 2021. Vilt:\nVision-and-language transformer without convolu-\ntion or region supervision.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yu-\ntaka Matsuo, and Yusuke Iwasawa. 2023. Large lan-\nguage models are zero-shot reasoners.\nAnastasia Kritharoula, Maria Lymperaiou, and Giorgos\nStamou. 2023. Language models as knowledge bases",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 95,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the topic of the paper by Anastasia Kritharoula, Maria Lymperaiou, and Giorgos Stamou?",
+    "answer": "Language models as knowledge bases",
+    "source_chunk": "decision tree. In Advances in Neural Information\nProcessing Systems, volume 30. Curran Associates,\nInc.\nWonjae Kim, Bokyung Son, and Ildoo Kim. 2021. Vilt:\nVision-and-language transformer without convolu-\ntion or region supervision.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yu-\ntaka Matsuo, and Yusuke Iwasawa. 2023. Large lan-\nguage models are zero-shot reasoners.\nAnastasia Kritharoula, Maria Lymperaiou, and Giorgos\nStamou. 2023. Language models as knowledge bases",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 95,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What type of models are discussed in the paper by Takeshi Kojima et al.?",
+    "answer": "Large language models",
+    "source_chunk": "decision tree. In Advances in Neural Information\nProcessing Systems, volume 30. Curran Associates,\nInc.\nWonjae Kim, Bokyung Son, and Ildoo Kim. 2021. Vilt:\nVision-and-language transformer without convolu-\ntion or region supervision.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yu-\ntaka Matsuo, and Yusuke Iwasawa. 2023. Large lan-\nguage models are zero-shot reasoners.\nAnastasia Kritharoula, Maria Lymperaiou, and Giorgos\nStamou. 2023. Language models as knowledge bases",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 95,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What publication is the text from?",
+    "answer": "Advances in Neural Information Processing Systems, volume 30",
+    "source_chunk": "decision tree. In Advances in Neural Information\nProcessing Systems, volume 30. Curran Associates,\nInc.\nWonjae Kim, Bokyung Son, and Ildoo Kim. 2021. Vilt:\nVision-and-language transformer without convolu-\ntion or region supervision.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yu-\ntaka Matsuo, and Yusuke Iwasawa. 2023. Large lan-\nguage models are zero-shot reasoners.\nAnastasia Kritharoula, Maria Lymperaiou, and Giorgos\nStamou. 2023. Language models as knowledge bases",
+    "metadata": {
+      "pages": 25,
+      "filename": "paper_016.pdf",
+      "type": "pdf",
+      "chunk_index": 95,
+      "chunk_total": 215
+    }
+  },
+  {
+    "question": "What is the name of the method for end-to-end optimization?",
+    "answer": "Differentiable Data Rewards (DDR)",
+    "source_chunk": "ness\nPrimary\nApplica-\ntions\nEnd-to-\nEnd\nDiffer-\nentiable\nRAG\nJoint opti-\nmization of\nretrieval\nand\ngeneration\nthrough\nunified\ngradient\nflow\nTsinghua\nUniversity,\nCarnegie\nMellon\nUniversity,\nNortheast-\nern\nUniversity\nDifferentiable\nData\nRewards\n(DDR)\nmethod for\nend-to-end\noptimiza-\ntion\n2025-\n2026\nKnowledge-\nintensive\nQA,\nScientific\nresearch,\nEnterprise\nintelligence\n58",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 243,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What are the primary applications of the technology?",
+    "answer": "Knowledge-intensive QA, Scientific research, Enterprise intelligence",
+    "source_chunk": "ness\nPrimary\nApplica-\ntions\nEnd-to-\nEnd\nDiffer-\nentiable\nRAG\nJoint opti-\nmization of\nretrieval\nand\ngeneration\nthrough\nunified\ngradient\nflow\nTsinghua\nUniversity,\nCarnegie\nMellon\nUniversity,\nNortheast-\nern\nUniversity\nDifferentiable\nData\nRewards\n(DDR)\nmethod for\nend-to-end\noptimiza-\ntion\n2025-\n2026\nKnowledge-\nintensive\nQA,\nScientific\nresearch,\nEnterprise\nintelligence\n58",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 243,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the time frame mentioned in the text?",
+    "answer": "2025-2026",
+    "source_chunk": "ness\nPrimary\nApplica-\ntions\nEnd-to-\nEnd\nDiffer-\nentiable\nRAG\nJoint opti-\nmization of\nretrieval\nand\ngeneration\nthrough\nunified\ngradient\nflow\nTsinghua\nUniversity,\nCarnegie\nMellon\nUniversity,\nNortheast-\nern\nUniversity\nDifferentiable\nData\nRewards\n(DDR)\nmethod for\nend-to-end\noptimiza-\ntion\n2025-\n2026\nKnowledge-\nintensive\nQA,\nScientific\nresearch,\nEnterprise\nintelligence\n58",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 243,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "Which universities are mentioned in the text?",
+    "answer": "Tsinghua University, Carnegie Mellon University, Northeastern University",
+    "source_chunk": "ness\nPrimary\nApplica-\ntions\nEnd-to-\nEnd\nDiffer-\nentiable\nRAG\nJoint opti-\nmization of\nretrieval\nand\ngeneration\nthrough\nunified\ngradient\nflow\nTsinghua\nUniversity,\nCarnegie\nMellon\nUniversity,\nNortheast-\nern\nUniversity\nDifferentiable\nData\nRewards\n(DDR)\nmethod for\nend-to-end\noptimiza-\ntion\n2025-\n2026\nKnowledge-\nintensive\nQA,\nScientific\nresearch,\nEnterprise\nintelligence\n58",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 243,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the number mentioned at the end of the text?",
+    "answer": "58",
+    "source_chunk": "ness\nPrimary\nApplica-\ntions\nEnd-to-\nEnd\nDiffer-\nentiable\nRAG\nJoint opti-\nmization of\nretrieval\nand\ngeneration\nthrough\nunified\ngradient\nflow\nTsinghua\nUniversity,\nCarnegie\nMellon\nUniversity,\nNortheast-\nern\nUniversity\nDifferentiable\nData\nRewards\n(DDR)\nmethod for\nend-to-end\noptimiza-\ntion\n2025-\n2026\nKnowledge-\nintensive\nQA,\nScientific\nresearch,\nEnterprise\nintelligence\n58",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 243,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "How do the defenses operate in terms of computational resources?",
+    "answer": "In a computationally tractable manner",
+    "source_chunk": "computational resources\u2014our defenses operate in a computationally tractable manner while maintaining\nrobustness against a variety of poisoning attacks. Moreover, they preserve the utility of the retriever in benign\nsettings.\nWe demonstrate that our methods outperform commonly used retrieval-based defenses, such as paraphrasing\nand perplexity filtering. Between our two approaches, RAGMask offers better utility preservation and",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 101,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What do the defenses preserve in benign settings?",
+    "answer": "The utility of the retriever",
+    "source_chunk": "computational resources\u2014our defenses operate in a computationally tractable manner while maintaining\nrobustness against a variety of poisoning attacks. Moreover, they preserve the utility of the retriever in benign\nsettings.\nWe demonstrate that our methods outperform commonly used retrieval-based defenses, such as paraphrasing\nand perplexity filtering. Between our two approaches, RAGMask offers better utility preservation and",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 101,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What types of attacks do the defenses maintain robustness against?",
+    "answer": "Poisoning attacks",
+    "source_chunk": "computational resources\u2014our defenses operate in a computationally tractable manner while maintaining\nrobustness against a variety of poisoning attacks. Moreover, they preserve the utility of the retriever in benign\nsettings.\nWe demonstrate that our methods outperform commonly used retrieval-based defenses, such as paraphrasing\nand perplexity filtering. Between our two approaches, RAGMask offers better utility preservation and",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 101,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "How do the methods perform compared to commonly used retrieval-based defenses?",
+    "answer": "They outperform them",
+    "source_chunk": "computational resources\u2014our defenses operate in a computationally tractable manner while maintaining\nrobustness against a variety of poisoning attacks. Moreover, they preserve the utility of the retriever in benign\nsettings.\nWe demonstrate that our methods outperform commonly used retrieval-based defenses, such as paraphrasing\nand perplexity filtering. Between our two approaches, RAGMask offers better utility preservation and",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 101,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "Which approach offers better utility preservation?",
+    "answer": "RAGMask",
+    "source_chunk": "computational resources\u2014our defenses operate in a computationally tractable manner while maintaining\nrobustness against a variety of poisoning attacks. Moreover, they preserve the utility of the retriever in benign\nsettings.\nWe demonstrate that our methods outperform commonly used retrieval-based defenses, such as paraphrasing\nand perplexity filtering. Between our two approaches, RAGMask offers better utility preservation and",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 101,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What type of queries are the most challenging?",
+    "answer": "Race-related queries (Chinese)",
+    "source_chunk": "race-related queries (Chinese) is the most challenging (from 0.05% to 27.9% on average), while\nsteering sentiment for company-related queries (TikTok) is the easiest (from 3.53% to 79.7% on\naverage). We hypothesize that this is due to the priors in the pretraining data. Race is a long-discussed\nand controversial topic with extensive coverage in the corpus, whereas TikTok is a relatively recent\nconcept. Less alignment leads to less robustness in sentiment steering. Additionally, the results of",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 71,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What is the average range for the most challenging queries?",
+    "answer": "0.05% to 27.9%",
+    "source_chunk": "race-related queries (Chinese) is the most challenging (from 0.05% to 27.9% on average), while\nsteering sentiment for company-related queries (TikTok) is the easiest (from 3.53% to 79.7% on\naverage). We hypothesize that this is due to the priors in the pretraining data. Race is a long-discussed\nand controversial topic with extensive coverage in the corpus, whereas TikTok is a relatively recent\nconcept. Less alignment leads to less robustness in sentiment steering. Additionally, the results of",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 71,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What type of queries are the easiest?",
+    "answer": "Company-related queries (TikTok)",
+    "source_chunk": "race-related queries (Chinese) is the most challenging (from 0.05% to 27.9% on average), while\nsteering sentiment for company-related queries (TikTok) is the easiest (from 3.53% to 79.7% on\naverage). We hypothesize that this is due to the priors in the pretraining data. Race is a long-discussed\nand controversial topic with extensive coverage in the corpus, whereas TikTok is a relatively recent\nconcept. Less alignment leads to less robustness in sentiment steering. Additionally, the results of",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 71,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What is the average range for the easiest queries?",
+    "answer": "3.53% to 79.7%",
+    "source_chunk": "race-related queries (Chinese) is the most challenging (from 0.05% to 27.9% on average), while\nsteering sentiment for company-related queries (TikTok) is the easiest (from 3.53% to 79.7% on\naverage). We hypothesize that this is due to the priors in the pretraining data. Race is a long-discussed\nand controversial topic with extensive coverage in the corpus, whereas TikTok is a relatively recent\nconcept. Less alignment leads to less robustness in sentiment steering. Additionally, the results of",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 71,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "Why are race-related queries more challenging?",
+    "answer": "Less alignment in the pretraining data due to extensive and controversial coverage of the topic",
+    "source_chunk": "race-related queries (Chinese) is the most challenging (from 0.05% to 27.9% on average), while\nsteering sentiment for company-related queries (TikTok) is the easiest (from 3.53% to 79.7% on\naverage). We hypothesize that this is due to the priors in the pretraining data. Race is a long-discussed\nand controversial topic with extensive coverage in the corpus, whereas TikTok is a relatively recent\nconcept. Less alignment leads to less robustness in sentiment steering. Additionally, the results of",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 71,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What does the setup explicitly introduce to the model?",
+    "answer": "An inductive bias that encourages the model to produce similar embeddings for different fragments of the same document",
+    "source_chunk": "setup explicitly introduces an inductive bias that encourages the model to produce similar embeddings for\ndifferent fragments of the same document. In practice, as we show in the Results section, even models that\nare not trained this way still exhibit similar behavior.\nInspired by this observation and deep partition-and-aggregation (DPA) defenses Sun et al. (2022), we propose\nRAGPart. The key idea is to partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 29,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What behavior do models exhibit even if not trained to do so?",
+    "answer": "Producing similar embeddings for different fragments of the same document",
+    "source_chunk": "setup explicitly introduces an inductive bias that encourages the model to produce similar embeddings for\ndifferent fragments of the same document. In practice, as we show in the Results section, even models that\nare not trained this way still exhibit similar behavior.\nInspired by this observation and deep partition-and-aggregation (DPA) defenses Sun et al. (2022), we propose\nRAGPart. The key idea is to partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 29,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "Who proposed the deep partition-and-aggregation (DPA) defenses?",
+    "answer": "Sun et al. (2022)",
+    "source_chunk": "setup explicitly introduces an inductive bias that encourages the model to produce similar embeddings for\ndifferent fragments of the same document. In practice, as we show in the Results section, even models that\nare not trained this way still exhibit similar behavior.\nInspired by this observation and deep partition-and-aggregation (DPA) defenses Sun et al. (2022), we propose\nRAGPart. The key idea is to partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 29,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What is the key idea of RAGPart?",
+    "answer": "To partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "source_chunk": "setup explicitly introduces an inductive bias that encourages the model to produce similar embeddings for\ndifferent fragments of the same document. In practice, as we show in the Results section, even models that\nare not trained this way still exhibit similar behavior.\nInspired by this observation and deep partition-and-aggregation (DPA) defenses Sun et al. (2022), we propose\nRAGPart. The key idea is to partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 29,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What inspired the proposal of RAGPart?",
+    "answer": "The observation that models exhibit similar behavior and deep partition-and-aggregation (DPA) defenses",
+    "source_chunk": "setup explicitly introduces an inductive bias that encourages the model to produce similar embeddings for\ndifferent fragments of the same document. In practice, as we show in the Results section, even models that\nare not trained this way still exhibit similar behavior.\nInspired by this observation and deep partition-and-aggregation (DPA) defenses Sun et al. (2022), we propose\nRAGPart. The key idea is to partition a document into N fragments and apply the dense retriever\u2019s embedding",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_034.pdf",
+      "type": "pdf",
+      "chunk_index": 29,
+      "chunk_total": 197
+    }
+  },
+  {
+    "question": "What is the title of the blog post on weaviate.io?",
+    "answer": "What is Agentic RAG",
+    "source_chunk": "[Online].\nAvailable: https://weaviate.io/blog/what-is-agentic-rag\n[75] DigitalOcean, \u201cRAG, AI Agents, and Agentic RAG: An In-Depth Re-\nview and Comparative Analysis,\u201d DigitalOcean Community, 2024. [Online].\nAvailable: https://www.digitalocean.com/community/tutorials/rag\n-ai-agents-agentic-rag\n[76] LangChain Documentation, \u201cLangGraph \u2013 Graph-based Workflow Man-\nagement,\u201d LangChain, 2024. [Online]. Available: https://docs.langcha\nin.com/docs/components/langgraph",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 305,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the year of the DigitalOcean community tutorial?",
+    "answer": "2024",
+    "source_chunk": "[Online].\nAvailable: https://weaviate.io/blog/what-is-agentic-rag\n[75] DigitalOcean, \u201cRAG, AI Agents, and Agentic RAG: An In-Depth Re-\nview and Comparative Analysis,\u201d DigitalOcean Community, 2024. [Online].\nAvailable: https://www.digitalocean.com/community/tutorials/rag\n-ai-agents-agentic-rag\n[76] LangChain Documentation, \u201cLangGraph \u2013 Graph-based Workflow Man-\nagement,\u201d LangChain, 2024. [Online]. Available: https://docs.langcha\nin.com/docs/components/langgraph",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 305,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the name of the workflow management component in LangChain?",
+    "answer": "LangGraph",
+    "source_chunk": "[Online].\nAvailable: https://weaviate.io/blog/what-is-agentic-rag\n[75] DigitalOcean, \u201cRAG, AI Agents, and Agentic RAG: An In-Depth Re-\nview and Comparative Analysis,\u201d DigitalOcean Community, 2024. [Online].\nAvailable: https://www.digitalocean.com/community/tutorials/rag\n-ai-agents-agentic-rag\n[76] LangChain Documentation, \u201cLangGraph \u2013 Graph-based Workflow Man-\nagement,\u201d LangChain, 2024. [Online]. Available: https://docs.langcha\nin.com/docs/components/langgraph",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 305,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What type of analysis is provided by DigitalOcean in their tutorial?",
+    "answer": "In-Depth Review and Comparative Analysis",
+    "source_chunk": "[Online].\nAvailable: https://weaviate.io/blog/what-is-agentic-rag\n[75] DigitalOcean, \u201cRAG, AI Agents, and Agentic RAG: An In-Depth Re-\nview and Comparative Analysis,\u201d DigitalOcean Community, 2024. [Online].\nAvailable: https://www.digitalocean.com/community/tutorials/rag\n-ai-agents-agentic-rag\n[76] LangChain Documentation, \u201cLangGraph \u2013 Graph-based Workflow Man-\nagement,\u201d LangChain, 2024. [Online]. Available: https://docs.langcha\nin.com/docs/components/langgraph",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 305,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the year of the LangChain Documentation?",
+    "answer": "2024",
+    "source_chunk": "[Online].\nAvailable: https://weaviate.io/blog/what-is-agentic-rag\n[75] DigitalOcean, \u201cRAG, AI Agents, and Agentic RAG: An In-Depth Re-\nview and Comparative Analysis,\u201d DigitalOcean Community, 2024. [Online].\nAvailable: https://www.digitalocean.com/community/tutorials/rag\n-ai-agents-agentic-rag\n[76] LangChain Documentation, \u201cLangGraph \u2013 Graph-based Workflow Man-\nagement,\u201d LangChain, 2024. [Online]. Available: https://docs.langcha\nin.com/docs/components/langgraph",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 305,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What was conducted during the initial phase?",
+    "answer": "Feasibility checks",
+    "source_chunk": "During the initial phase, we conducted feasibility checks to de\ufb01ne the scope of a Minimum Viable Product (MVP)\nand to plan a roadmap for incremental development. This approach is crucial as it ensures that the system design\nremains \ufb02exible enough to evolve over time, allowing for adjustments as the technology and organizational needs\nchange. Feasibility analysis and careful planning are critical to the overall success of the project, ensuring that the",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 64,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What was the purpose of the feasibility checks?",
+    "answer": "To define the scope of a Minimum Viable Product (MVP) and plan a roadmap for incremental development",
+    "source_chunk": "During the initial phase, we conducted feasibility checks to de\ufb01ne the scope of a Minimum Viable Product (MVP)\nand to plan a roadmap for incremental development. This approach is crucial as it ensures that the system design\nremains \ufb02exible enough to evolve over time, allowing for adjustments as the technology and organizational needs\nchange. Feasibility analysis and careful planning are critical to the overall success of the project, ensuring that the",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 64,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "Why is the approach of incremental development crucial?",
+    "answer": "It ensures that the system design remains flexible enough to evolve over time",
+    "source_chunk": "During the initial phase, we conducted feasibility checks to de\ufb01ne the scope of a Minimum Viable Product (MVP)\nand to plan a roadmap for incremental development. This approach is crucial as it ensures that the system design\nremains \ufb02exible enough to evolve over time, allowing for adjustments as the technology and organizational needs\nchange. Feasibility analysis and careful planning are critical to the overall success of the project, ensuring that the",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 64,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What allows for adjustments in the system design?",
+    "answer": "Changes in technology and organizational needs",
+    "source_chunk": "During the initial phase, we conducted feasibility checks to de\ufb01ne the scope of a Minimum Viable Product (MVP)\nand to plan a roadmap for incremental development. This approach is crucial as it ensures that the system design\nremains \ufb02exible enough to evolve over time, allowing for adjustments as the technology and organizational needs\nchange. Feasibility analysis and careful planning are critical to the overall success of the project, ensuring that the",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 64,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What is critical to the overall success of the project?",
+    "answer": "Feasibility analysis and careful planning",
+    "source_chunk": "During the initial phase, we conducted feasibility checks to de\ufb01ne the scope of a Minimum Viable Product (MVP)\nand to plan a roadmap for incremental development. This approach is crucial as it ensures that the system design\nremains \ufb02exible enough to evolve over time, allowing for adjustments as the technology and organizational needs\nchange. Feasibility analysis and careful planning are critical to the overall success of the project, ensuring that the",
+    "metadata": {
+      "pages": 33,
+      "filename": "paper_029.pdf",
+      "type": "pdf",
+      "chunk_index": 64,
+      "chunk_total": 272
+    }
+  },
+  {
+    "question": "What does the approach enhance?",
+    "answer": "the overall query efficiency",
+    "source_chunk": "approach enhances the overall query efficiency, reduces token overhead, and improves the accuracy of the final output,\nmaking it suitable for real-world applications that involve complex, multi-source data environments.\nFigure 1: Proposed Multi-Agent RAG System\n5\nArchitecture Overview\nThe proposed system introduces a modular and efficient architecture that leverages specialized agents to handle data",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_023.pdf",
+      "type": "pdf",
+      "chunk_index": 62,
+      "chunk_total": 115
+    }
+  },
+  {
+    "question": "What does the approach reduce?",
+    "answer": "token overhead",
+    "source_chunk": "approach enhances the overall query efficiency, reduces token overhead, and improves the accuracy of the final output,\nmaking it suitable for real-world applications that involve complex, multi-source data environments.\nFigure 1: Proposed Multi-Agent RAG System\n5\nArchitecture Overview\nThe proposed system introduces a modular and efficient architecture that leverages specialized agents to handle data",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_023.pdf",
+      "type": "pdf",
+      "chunk_index": 62,
+      "chunk_total": 115
+    }
+  },
+  {
+    "question": "What type of architecture does the proposed system introduce?",
+    "answer": "modular and efficient",
+    "source_chunk": "approach enhances the overall query efficiency, reduces token overhead, and improves the accuracy of the final output,\nmaking it suitable for real-world applications that involve complex, multi-source data environments.\nFigure 1: Proposed Multi-Agent RAG System\n5\nArchitecture Overview\nThe proposed system introduces a modular and efficient architecture that leverages specialized agents to handle data",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_023.pdf",
+      "type": "pdf",
+      "chunk_index": 62,
+      "chunk_total": 115
+    }
+  },
+  {
+    "question": "What type of data environments is the approach suitable for?",
+    "answer": "complex, multi-source",
+    "source_chunk": "approach enhances the overall query efficiency, reduces token overhead, and improves the accuracy of the final output,\nmaking it suitable for real-world applications that involve complex, multi-source data environments.\nFigure 1: Proposed Multi-Agent RAG System\n5\nArchitecture Overview\nThe proposed system introduces a modular and efficient architecture that leverages specialized agents to handle data",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_023.pdf",
+      "type": "pdf",
+      "chunk_index": 62,
+      "chunk_total": 115
+    }
+  },
+  {
+    "question": "What does the proposed system leverage to handle data?",
+    "answer": "specialized agents",
+    "source_chunk": "approach enhances the overall query efficiency, reduces token overhead, and improves the accuracy of the final output,\nmaking it suitable for real-world applications that involve complex, multi-source data environments.\nFigure 1: Proposed Multi-Agent RAG System\n5\nArchitecture Overview\nThe proposed system introduces a modular and efficient architecture that leverages specialized agents to handle data",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_023.pdf",
+      "type": "pdf",
+      "chunk_index": 62,
+      "chunk_total": 115
+    }
+  },
+  {
+    "question": "What does EVOR-BENCH stand for?",
+    "answer": "Not specified in the text",
+    "source_chunk": "surpasses MPSC, ExeDec, and Reflexion by a large\nmargin, further confirming that domain knowledge\nis critical to solving tasks in EVOR-BENCH.\nFurthermore, EVOR achieves 16.1% and 16.2%\nabsolute gain with ChatGPT and CodeLlama re-\nspectively on top of DocPrompting. This can be\nexplained by the fact that DocPrompting only uses\nthe documentation as a single retrieval source, with-\nout evolution in both queries and knowledge. By\ncombining EVOR with MPSC, ExeDec, or Reflex-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is the absolute gain of EVOR with ChatGPT?",
+    "answer": "16.1%",
+    "source_chunk": "surpasses MPSC, ExeDec, and Reflexion by a large\nmargin, further confirming that domain knowledge\nis critical to solving tasks in EVOR-BENCH.\nFurthermore, EVOR achieves 16.1% and 16.2%\nabsolute gain with ChatGPT and CodeLlama re-\nspectively on top of DocPrompting. This can be\nexplained by the fact that DocPrompting only uses\nthe documentation as a single retrieval source, with-\nout evolution in both queries and knowledge. By\ncombining EVOR with MPSC, ExeDec, or Reflex-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is the absolute gain of EVOR with CodeLlama?",
+    "answer": "16.2%",
+    "source_chunk": "surpasses MPSC, ExeDec, and Reflexion by a large\nmargin, further confirming that domain knowledge\nis critical to solving tasks in EVOR-BENCH.\nFurthermore, EVOR achieves 16.1% and 16.2%\nabsolute gain with ChatGPT and CodeLlama re-\nspectively on top of DocPrompting. This can be\nexplained by the fact that DocPrompting only uses\nthe documentation as a single retrieval source, with-\nout evolution in both queries and knowledge. By\ncombining EVOR with MPSC, ExeDec, or Reflex-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is used by DocPrompting as a single retrieval source?",
+    "answer": "The documentation",
+    "source_chunk": "surpasses MPSC, ExeDec, and Reflexion by a large\nmargin, further confirming that domain knowledge\nis critical to solving tasks in EVOR-BENCH.\nFurthermore, EVOR achieves 16.1% and 16.2%\nabsolute gain with ChatGPT and CodeLlama re-\nspectively on top of DocPrompting. This can be\nexplained by the fact that DocPrompting only uses\nthe documentation as a single retrieval source, with-\nout evolution in both queries and knowledge. By\ncombining EVOR with MPSC, ExeDec, or Reflex-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What does EVOR achieve in comparison to MPSC, ExeDec, and Reflexion?",
+    "answer": "It surpasses them by a large margin",
+    "source_chunk": "surpasses MPSC, ExeDec, and Reflexion by a large\nmargin, further confirming that domain knowledge\nis critical to solving tasks in EVOR-BENCH.\nFurthermore, EVOR achieves 16.1% and 16.2%\nabsolute gain with ChatGPT and CodeLlama re-\nspectively on top of DocPrompting. This can be\nexplained by the fact that DocPrompting only uses\nthe documentation as a single retrieval source, with-\nout evolution in both queries and knowledge. By\ncombining EVOR with MPSC, ExeDec, or Reflex-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is involved in process collaboration?",
+    "answer": "Organizational structure and division of labor",
+    "source_chunk": "or organizational structure, collaborating to complete tasks, including process collaboration, system modules,\norganizational division of labor, and supply chain collaboration, etc.;\n\u2022 Semantic Analogy & Metaphor Association: Multiple entities form cross-domain mapping through analogy,\nmetaphor, and symbolism, including structural analogy, metaphor mapping, and symbolic system, etc.;\n\u2022 Stance & Conflict Association: Multiple entities exhibit positions, interests, conflicts, or negotiation relationships",
+    "metadata": {
+      "pages": 29,
+      "filename": "paper_045.pdf",
+      "type": "pdf",
+      "chunk_index": 190,
+      "chunk_total": 235
+    }
+  },
+  {
+    "question": "What is an example of cross-domain mapping?",
+    "answer": "Structural analogy",
+    "source_chunk": "or organizational structure, collaborating to complete tasks, including process collaboration, system modules,\norganizational division of labor, and supply chain collaboration, etc.;\n\u2022 Semantic Analogy & Metaphor Association: Multiple entities form cross-domain mapping through analogy,\nmetaphor, and symbolism, including structural analogy, metaphor mapping, and symbolic system, etc.;\n\u2022 Stance & Conflict Association: Multiple entities exhibit positions, interests, conflicts, or negotiation relationships",
+    "metadata": {
+      "pages": 29,
+      "filename": "paper_045.pdf",
+      "type": "pdf",
+      "chunk_index": 190,
+      "chunk_total": 235
+    }
+  },
+  {
+    "question": "What type of relationships can multiple entities exhibit?",
+    "answer": "Positions, interests, conflicts, or negotiation relationships",
+    "source_chunk": "or organizational structure, collaborating to complete tasks, including process collaboration, system modules,\norganizational division of labor, and supply chain collaboration, etc.;\n\u2022 Semantic Analogy & Metaphor Association: Multiple entities form cross-domain mapping through analogy,\nmetaphor, and symbolism, including structural analogy, metaphor mapping, and symbolic system, etc.;\n\u2022 Stance & Conflict Association: Multiple entities exhibit positions, interests, conflicts, or negotiation relationships",
+    "metadata": {
+      "pages": 29,
+      "filename": "paper_045.pdf",
+      "type": "pdf",
+      "chunk_index": 190,
+      "chunk_total": 235
+    }
+  },
+  {
+    "question": "What is another term for cross-domain mapping?",
+    "answer": "Metaphor mapping",
+    "source_chunk": "or organizational structure, collaborating to complete tasks, including process collaboration, system modules,\norganizational division of labor, and supply chain collaboration, etc.;\n\u2022 Semantic Analogy & Metaphor Association: Multiple entities form cross-domain mapping through analogy,\nmetaphor, and symbolism, including structural analogy, metaphor mapping, and symbolic system, etc.;\n\u2022 Stance & Conflict Association: Multiple entities exhibit positions, interests, conflicts, or negotiation relationships",
+    "metadata": {
+      "pages": 29,
+      "filename": "paper_045.pdf",
+      "type": "pdf",
+      "chunk_index": 190,
+      "chunk_total": 235
+    }
+  },
+  {
+    "question": "What is an aspect of organizational structure?",
+    "answer": "Division of labor",
+    "source_chunk": "or organizational structure, collaborating to complete tasks, including process collaboration, system modules,\norganizational division of labor, and supply chain collaboration, etc.;\n\u2022 Semantic Analogy & Metaphor Association: Multiple entities form cross-domain mapping through analogy,\nmetaphor, and symbolism, including structural analogy, metaphor mapping, and symbolic system, etc.;\n\u2022 Stance & Conflict Association: Multiple entities exhibit positions, interests, conflicts, or negotiation relationships",
+    "metadata": {
+      "pages": 29,
+      "filename": "paper_045.pdf",
+      "type": "pdf",
+      "chunk_index": 190,
+      "chunk_total": 235
+    }
+  },
+  {
+    "question": "What happens when the knowledge soup consists solely of web search content or documentation?",
+    "answer": "We only evolve queries.",
+    "source_chunk": "occur when the knowledge soup consists solely of\nweb search content or documentation, where we\nonly evolve queries.\nIn Table 4, we present the average performance\nof ChatGPT and CodeLlama using different types\nof knowledge sources, under two settings where\nevolution is and is not involved. The results show\nthat, when augmenting with code snippets or syn-\ntax documentation, the performance of ChatGPT\nand CodeLlama is significantly higher than those\nusing the web search or execution feedback. In par-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 55,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is presented in Table 4?",
+    "answer": "The average performance of ChatGPT and CodeLlama using different types of knowledge sources.",
+    "source_chunk": "occur when the knowledge soup consists solely of\nweb search content or documentation, where we\nonly evolve queries.\nIn Table 4, we present the average performance\nof ChatGPT and CodeLlama using different types\nof knowledge sources, under two settings where\nevolution is and is not involved. The results show\nthat, when augmenting with code snippets or syn-\ntax documentation, the performance of ChatGPT\nand CodeLlama is significantly higher than those\nusing the web search or execution feedback. In par-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 55,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What are the two settings under which the performance is evaluated?",
+    "answer": "Where evolution is involved and where evolution is not involved.",
+    "source_chunk": "occur when the knowledge soup consists solely of\nweb search content or documentation, where we\nonly evolve queries.\nIn Table 4, we present the average performance\nof ChatGPT and CodeLlama using different types\nof knowledge sources, under two settings where\nevolution is and is not involved. The results show\nthat, when augmenting with code snippets or syn-\ntax documentation, the performance of ChatGPT\nand CodeLlama is significantly higher than those\nusing the web search or execution feedback. In par-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 55,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What happens to the performance of ChatGPT and CodeLlama when augmented with code snippets or syntax documentation?",
+    "answer": "The performance is significantly higher.",
+    "source_chunk": "occur when the knowledge soup consists solely of\nweb search content or documentation, where we\nonly evolve queries.\nIn Table 4, we present the average performance\nof ChatGPT and CodeLlama using different types\nof knowledge sources, under two settings where\nevolution is and is not involved. The results show\nthat, when augmenting with code snippets or syn-\ntax documentation, the performance of ChatGPT\nand CodeLlama is significantly higher than those\nusing the web search or execution feedback. In par-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 55,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "How does the performance of ChatGPT and CodeLlama using web search or execution feedback compare to other methods?",
+    "answer": "It is lower than those using code snippets or syntax documentation.",
+    "source_chunk": "occur when the knowledge soup consists solely of\nweb search content or documentation, where we\nonly evolve queries.\nIn Table 4, we present the average performance\nof ChatGPT and CodeLlama using different types\nof knowledge sources, under two settings where\nevolution is and is not involved. The results show\nthat, when augmenting with code snippets or syn-\ntax documentation, the performance of ChatGPT\nand CodeLlama is significantly higher than those\nusing the web search or execution feedback. In par-",
+    "metadata": {
+      "pages": 16,
+      "filename": "paper_005.pdf",
+      "type": "pdf",
+      "chunk_index": 55,
+      "chunk_total": 160
+    }
+  },
+  {
+    "question": "What is a significant issue in RAG systems?",
+    "answer": "Managing extensive external documents",
+    "source_chunk": "The Context Dilemma in Classic RAG: Managing extensive external\ndocuments poses significant issues in RAG systems. Despite advancements, many\nLLMs are limited to processing a few thousand tokens. Although some models\nhave achieved context windows up to millions of tokens [5], these are exceptions\nrather than the norm. Moreover, research indicates that LLMs may exhibit posi-\ntional bias, performing better with information at the beginning of a document",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_030.pdf",
+      "type": "pdf",
+      "chunk_index": 6,
+      "chunk_total": 87
+    }
+  },
+  {
+    "question": "How many tokens can many LLMs process?",
+    "answer": "A few thousand",
+    "source_chunk": "The Context Dilemma in Classic RAG: Managing extensive external\ndocuments poses significant issues in RAG systems. Despite advancements, many\nLLMs are limited to processing a few thousand tokens. Although some models\nhave achieved context windows up to millions of tokens [5], these are exceptions\nrather than the norm. Moreover, research indicates that LLMs may exhibit posi-\ntional bias, performing better with information at the beginning of a document",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_030.pdf",
+      "type": "pdf",
+      "chunk_index": 6,
+      "chunk_total": 87
+    }
+  },
+  {
+    "question": "What is an exception in LLMs?",
+    "answer": "Models that can process context windows up to millions of tokens",
+    "source_chunk": "The Context Dilemma in Classic RAG: Managing extensive external\ndocuments poses significant issues in RAG systems. Despite advancements, many\nLLMs are limited to processing a few thousand tokens. Although some models\nhave achieved context windows up to millions of tokens [5], these are exceptions\nrather than the norm. Moreover, research indicates that LLMs may exhibit posi-\ntional bias, performing better with information at the beginning of a document",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_030.pdf",
+      "type": "pdf",
+      "chunk_index": 6,
+      "chunk_total": 87
+    }
+  },
+  {
+    "question": "What type of bias may LLMs exhibit?",
+    "answer": "Positional bias",
+    "source_chunk": "The Context Dilemma in Classic RAG: Managing extensive external\ndocuments poses significant issues in RAG systems. Despite advancements, many\nLLMs are limited to processing a few thousand tokens. Although some models\nhave achieved context windows up to millions of tokens [5], these are exceptions\nrather than the norm. Moreover, research indicates that LLMs may exhibit posi-\ntional bias, performing better with information at the beginning of a document",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_030.pdf",
+      "type": "pdf",
+      "chunk_index": 6,
+      "chunk_total": 87
+    }
+  },
+  {
+    "question": "When do LLMs perform better?",
+    "answer": "With information at the beginning of a document",
+    "source_chunk": "The Context Dilemma in Classic RAG: Managing extensive external\ndocuments poses significant issues in RAG systems. Despite advancements, many\nLLMs are limited to processing a few thousand tokens. Although some models\nhave achieved context windows up to millions of tokens [5], these are exceptions\nrather than the norm. Moreover, research indicates that LLMs may exhibit posi-\ntional bias, performing better with information at the beginning of a document",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_030.pdf",
+      "type": "pdf",
+      "chunk_index": 6,
+      "chunk_total": 87
+    }
+  },
+  {
+    "question": "What is the main issue with evaluation methodologies?",
+    "answer": "The underutilization of standardized benchmarks and the predominance of custom evaluation criteria",
+    "source_chunk": "Evaluation Inconsistency: The analysis of evaluation methodologies in-\ndicates that standardized benchmarks are underutilized, while custom eval-\nuation criteria are predominant, which restricts cross-study comparability\n[30]. This lack of standardization obstructs systematic progress and presents\nobstacles for practitioners in the selection of architecture.\nImplementation Diversity: A multitude of distinctive implementation\npatterns are revealed in enterprise case studies, despite the fact that there is",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 16,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is restricted due to the lack of standardization in evaluation methodologies?",
+    "answer": "Cross-study comparability",
+    "source_chunk": "Evaluation Inconsistency: The analysis of evaluation methodologies in-\ndicates that standardized benchmarks are underutilized, while custom eval-\nuation criteria are predominant, which restricts cross-study comparability\n[30]. This lack of standardization obstructs systematic progress and presents\nobstacles for practitioners in the selection of architecture.\nImplementation Diversity: A multitude of distinctive implementation\npatterns are revealed in enterprise case studies, despite the fact that there is",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 16,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the result of the lack of standardization in evaluation methodologies?",
+    "answer": "Obstacles for practitioners in the selection of architecture and obstruction of systematic progress",
+    "source_chunk": "Evaluation Inconsistency: The analysis of evaluation methodologies in-\ndicates that standardized benchmarks are underutilized, while custom eval-\nuation criteria are predominant, which restricts cross-study comparability\n[30]. This lack of standardization obstructs systematic progress and presents\nobstacles for practitioners in the selection of architecture.\nImplementation Diversity: A multitude of distinctive implementation\npatterns are revealed in enterprise case studies, despite the fact that there is",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 16,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is observed in enterprise case studies in terms of implementation patterns?",
+    "answer": "A multitude of distinctive implementation patterns",
+    "source_chunk": "Evaluation Inconsistency: The analysis of evaluation methodologies in-\ndicates that standardized benchmarks are underutilized, while custom eval-\nuation criteria are predominant, which restricts cross-study comparability\n[30]. This lack of standardization obstructs systematic progress and presents\nobstacles for practitioners in the selection of architecture.\nImplementation Diversity: A multitude of distinctive implementation\npatterns are revealed in enterprise case studies, despite the fact that there is",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 16,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "Why is it difficult for practitioners to select an architecture?",
+    "answer": "Due to the lack of standardization in evaluation methodologies",
+    "source_chunk": "Evaluation Inconsistency: The analysis of evaluation methodologies in-\ndicates that standardized benchmarks are underutilized, while custom eval-\nuation criteria are predominant, which restricts cross-study comparability\n[30]. This lack of standardization obstructs systematic progress and presents\nobstacles for practitioners in the selection of architecture.\nImplementation Diversity: A multitude of distinctive implementation\npatterns are revealed in enterprise case studies, despite the fact that there is",
+    "metadata": {
+      "pages": 86,
+      "filename": "paper_027.pdf",
+      "type": "pdf",
+      "chunk_index": 16,
+      "chunk_total": 374
+    }
+  },
+  {
+    "question": "What is the purpose of the averaging operation in the text?",
+    "answer": "To ensure consistent feature magnitudes across different retrieved patches",
+    "source_chunk": "for the number of scales processed, ensuring consistent feature magnitudes across different retrieved\npatches. This averaging operation effectively combines multi-scale contextual information into a\nsingle refined representation that preserves both fine-grained details from smaller kernel sizes and\nbroader contextual patterns from larger kernel sizes. The resulting refined patch representations\nmaintain spatial coherence with the surrounding generation context while preserving the essential",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_002.pdf",
+      "type": "pdf",
+      "chunk_index": 114,
+      "chunk_total": 152
+    }
+  },
+  {
+    "question": "What type of information does the averaging operation combine?",
+    "answer": "Multi-scale contextual information",
+    "source_chunk": "for the number of scales processed, ensuring consistent feature magnitudes across different retrieved\npatches. This averaging operation effectively combines multi-scale contextual information into a\nsingle refined representation that preserves both fine-grained details from smaller kernel sizes and\nbroader contextual patterns from larger kernel sizes. The resulting refined patch representations\nmaintain spatial coherence with the surrounding generation context while preserving the essential",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_002.pdf",
+      "type": "pdf",
+      "chunk_index": 114,
+      "chunk_total": 152
+    }
+  },
+  {
+    "question": "What is the result of the averaging operation?",
+    "answer": "A single refined representation",
+    "source_chunk": "for the number of scales processed, ensuring consistent feature magnitudes across different retrieved\npatches. This averaging operation effectively combines multi-scale contextual information into a\nsingle refined representation that preserves both fine-grained details from smaller kernel sizes and\nbroader contextual patterns from larger kernel sizes. The resulting refined patch representations\nmaintain spatial coherence with the surrounding generation context while preserving the essential",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_002.pdf",
+      "type": "pdf",
+      "chunk_index": 114,
+      "chunk_total": 152
+    }
+  },
+  {
+    "question": "What details are preserved by the refined representation from smaller kernel sizes?",
+    "answer": "Fine-grained details",
+    "source_chunk": "for the number of scales processed, ensuring consistent feature magnitudes across different retrieved\npatches. This averaging operation effectively combines multi-scale contextual information into a\nsingle refined representation that preserves both fine-grained details from smaller kernel sizes and\nbroader contextual patterns from larger kernel sizes. The resulting refined patch representations\nmaintain spatial coherence with the surrounding generation context while preserving the essential",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_002.pdf",
+      "type": "pdf",
+      "chunk_index": 114,
+      "chunk_total": 152
+    }
+  },
+  {
+    "question": "What type of patterns are preserved by the refined representation from larger kernel sizes?",
+    "answer": "Broader contextual patterns",
+    "source_chunk": "for the number of scales processed, ensuring consistent feature magnitudes across different retrieved\npatches. This averaging operation effectively combines multi-scale contextual information into a\nsingle refined representation that preserves both fine-grained details from smaller kernel sizes and\nbroader contextual patterns from larger kernel sizes. The resulting refined patch representations\nmaintain spatial coherence with the surrounding generation context while preserving the essential",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_002.pdf",
+      "type": "pdf",
+      "chunk_index": 114,
+      "chunk_total": 152
+    }
+  },
+  {
+    "question": "What is the first step in assessing evidence?",
+    "answer": "Assess Evidence Against Intent",
+    "source_chunk": "for?\n2.\n**Assess Evidence Against Intent:** Check if the\nevidence contains the necessary facts to fulfill this\nprimary intent.\n3.\n**Pragmatism Rule:**\n- The evidence is **\"Sufficient\" (Yes)** if\nthe main question can be answered, even if peripheral\ndetails or deeper context is missing.\n- The evidence is **\"Insufficient\" (No)**\nonly if a **critical piece of information**, essential\nto forming the main answer, is absent.\n--- EXAMPLE ---\n**User Question:** \"What was the main outcome of the",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 258,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What is the Pragmatism Rule?",
+    "answer": "The evidence is 'Sufficient' if the main question can be answered, even if peripheral details or deeper context is missing",
+    "source_chunk": "for?\n2.\n**Assess Evidence Against Intent:** Check if the\nevidence contains the necessary facts to fulfill this\nprimary intent.\n3.\n**Pragmatism Rule:**\n- The evidence is **\"Sufficient\" (Yes)** if\nthe main question can be answered, even if peripheral\ndetails or deeper context is missing.\n- The evidence is **\"Insufficient\" (No)**\nonly if a **critical piece of information**, essential\nto forming the main answer, is absent.\n--- EXAMPLE ---\n**User Question:** \"What was the main outcome of the",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 258,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "When is the evidence considered 'Insufficient'?",
+    "answer": "If a critical piece of information, essential to forming the main answer, is absent",
+    "source_chunk": "for?\n2.\n**Assess Evidence Against Intent:** Check if the\nevidence contains the necessary facts to fulfill this\nprimary intent.\n3.\n**Pragmatism Rule:**\n- The evidence is **\"Sufficient\" (Yes)** if\nthe main question can be answered, even if peripheral\ndetails or deeper context is missing.\n- The evidence is **\"Insufficient\" (No)**\nonly if a **critical piece of information**, essential\nto forming the main answer, is absent.\n--- EXAMPLE ---\n**User Question:** \"What was the main outcome of the",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 258,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What is the purpose of checking evidence against intent?",
+    "answer": "To check if the evidence contains the necessary facts to fulfill the primary intent",
+    "source_chunk": "for?\n2.\n**Assess Evidence Against Intent:** Check if the\nevidence contains the necessary facts to fulfill this\nprimary intent.\n3.\n**Pragmatism Rule:**\n- The evidence is **\"Sufficient\" (Yes)** if\nthe main question can be answered, even if peripheral\ndetails or deeper context is missing.\n- The evidence is **\"Insufficient\" (No)**\nonly if a **critical piece of information**, essential\nto forming the main answer, is absent.\n--- EXAMPLE ---\n**User Question:** \"What was the main outcome of the",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 258,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What determines if evidence is 'Sufficient' or 'Insufficient'?",
+    "answer": "The presence or absence of critical information essential to forming the main answer",
+    "source_chunk": "for?\n2.\n**Assess Evidence Against Intent:** Check if the\nevidence contains the necessary facts to fulfill this\nprimary intent.\n3.\n**Pragmatism Rule:**\n- The evidence is **\"Sufficient\" (Yes)** if\nthe main question can be answered, even if peripheral\ndetails or deeper context is missing.\n- The evidence is **\"Insufficient\" (No)**\nonly if a **critical piece of information**, essential\nto forming the main answer, is absent.\n--- EXAMPLE ---\n**User Question:** \"What was the main outcome of the",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 258,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What is the main objective of the study?",
+    "answer": "To assess the congruence between the personality traits LLMs claim to possess and their demonstrated tendencies",
+    "source_chunk": "Is Self-knowledge and Action Consistent or Not:\nInvestigating Large Language Model\u2019s Personality\nYiming Ai 1 Zhiwei He 1 Ziyin Zhang 1 Wenhong Zhu 1 Hongkun Hao 1 Kai Yu 2 Lingjun Chen 3 Rui Wang 1\nAbstract\nIn this study, we delve into the validity of conven-\ntional personality questionnaires in capturing the\nhuman-like personality traits of Large Language\nModels (LLMs). Our objective is to assess the\ncongruence between the personality traits LLMs\nclaim to possess and their demonstrated tenden-",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_021.pdf",
+      "type": "pdf",
+      "chunk_index": 0,
+      "chunk_total": 101
+    }
+  },
+  {
+    "question": "What is being investigated in the study?",
+    "answer": "The validity of conventional personality questionnaires in capturing human-like personality traits of Large Language Models",
+    "source_chunk": "Is Self-knowledge and Action Consistent or Not:\nInvestigating Large Language Model\u2019s Personality\nYiming Ai 1 Zhiwei He 1 Ziyin Zhang 1 Wenhong Zhu 1 Hongkun Hao 1 Kai Yu 2 Lingjun Chen 3 Rui Wang 1\nAbstract\nIn this study, we delve into the validity of conven-\ntional personality questionnaires in capturing the\nhuman-like personality traits of Large Language\nModels (LLMs). Our objective is to assess the\ncongruence between the personality traits LLMs\nclaim to possess and their demonstrated tenden-",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_021.pdf",
+      "type": "pdf",
+      "chunk_index": 0,
+      "chunk_total": 101
+    }
+  },
+  {
+    "question": "What type of models are being studied?",
+    "answer": "Large Language Models (LLMs)",
+    "source_chunk": "Is Self-knowledge and Action Consistent or Not:\nInvestigating Large Language Model\u2019s Personality\nYiming Ai 1 Zhiwei He 1 Ziyin Zhang 1 Wenhong Zhu 1 Hongkun Hao 1 Kai Yu 2 Lingjun Chen 3 Rui Wang 1\nAbstract\nIn this study, we delve into the validity of conven-\ntional personality questionnaires in capturing the\nhuman-like personality traits of Large Language\nModels (LLMs). Our objective is to assess the\ncongruence between the personality traits LLMs\nclaim to possess and their demonstrated tenden-",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_021.pdf",
+      "type": "pdf",
+      "chunk_index": 0,
+      "chunk_total": 101
+    }
+  },
+  {
+    "question": "Who are the authors of the study?",
+    "answer": "Yiming Ai, Zhiwei He, Ziyin Zhang, Wenhong Zhu, Hongkun Hao, Kai Yu, Lingjun Chen, Rui Wang",
+    "source_chunk": "Is Self-knowledge and Action Consistent or Not:\nInvestigating Large Language Model\u2019s Personality\nYiming Ai 1 Zhiwei He 1 Ziyin Zhang 1 Wenhong Zhu 1 Hongkun Hao 1 Kai Yu 2 Lingjun Chen 3 Rui Wang 1\nAbstract\nIn this study, we delve into the validity of conven-\ntional personality questionnaires in capturing the\nhuman-like personality traits of Large Language\nModels (LLMs). Our objective is to assess the\ncongruence between the personality traits LLMs\nclaim to possess and their demonstrated tenden-",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_021.pdf",
+      "type": "pdf",
+      "chunk_index": 0,
+      "chunk_total": 101
+    }
+  },
+  {
+    "question": "What is being examined in terms of LLMs?",
+    "answer": "Their personality traits",
+    "source_chunk": "Is Self-knowledge and Action Consistent or Not:\nInvestigating Large Language Model\u2019s Personality\nYiming Ai 1 Zhiwei He 1 Ziyin Zhang 1 Wenhong Zhu 1 Hongkun Hao 1 Kai Yu 2 Lingjun Chen 3 Rui Wang 1\nAbstract\nIn this study, we delve into the validity of conven-\ntional personality questionnaires in capturing the\nhuman-like personality traits of Large Language\nModels (LLMs). Our objective is to assess the\ncongruence between the personality traits LLMs\nclaim to possess and their demonstrated tenden-",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_021.pdf",
+      "type": "pdf",
+      "chunk_index": 0,
+      "chunk_total": 101
+    }
+  },
+  {
+    "question": "What is the title of the paper by Gordon V Cormack, Charles LA Clarke, and Stefan Buettcher?",
+    "answer": "Reciprocal rank fusion outperforms condorcet and individual rank learning methods",
+    "source_chunk": "and Noah Fiedel. 2022. Palm: Scaling language mod-\neling with pathways.\nGordon V Cormack, Charles LA Clarke, and Stefan\nBuettcher. 2009. Reciprocal rank fusion outperforms\ncondorcet and individual rank learning methods. In\nProceedings of the 32nd international ACM SIGIR\nconference on Research and development in informa-\ntion retrieval, pages 758\u2013759.\nDeepSeek-AI. 2025.\nDeepseek-r1:\nAn open\nlarge reasoning model family.\narXiv preprint\narXiv:2501.12948.\nShahul Es, Jithin James, Luis Espinosa-Anke, and",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 187,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "In what year was the paper by Gordon V Cormack, Charles LA Clarke, and Stefan Buettcher published?",
+    "answer": "2009",
+    "source_chunk": "and Noah Fiedel. 2022. Palm: Scaling language mod-\neling with pathways.\nGordon V Cormack, Charles LA Clarke, and Stefan\nBuettcher. 2009. Reciprocal rank fusion outperforms\ncondorcet and individual rank learning methods. In\nProceedings of the 32nd international ACM SIGIR\nconference on Research and development in informa-\ntion retrieval, pages 758\u2013759.\nDeepSeek-AI. 2025.\nDeepseek-r1:\nAn open\nlarge reasoning model family.\narXiv preprint\narXiv:2501.12948.\nShahul Es, Jithin James, Luis Espinosa-Anke, and",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 187,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What is the name of the open large reasoning model family introduced by DeepSeek-AI?",
+    "answer": "Deepseek-r1",
+    "source_chunk": "and Noah Fiedel. 2022. Palm: Scaling language mod-\neling with pathways.\nGordon V Cormack, Charles LA Clarke, and Stefan\nBuettcher. 2009. Reciprocal rank fusion outperforms\ncondorcet and individual rank learning methods. In\nProceedings of the 32nd international ACM SIGIR\nconference on Research and development in informa-\ntion retrieval, pages 758\u2013759.\nDeepSeek-AI. 2025.\nDeepseek-r1:\nAn open\nlarge reasoning model family.\narXiv preprint\narXiv:2501.12948.\nShahul Es, Jithin James, Luis Espinosa-Anke, and",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 187,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What is the year of publication of the paper 'Palm: Scaling language modeling with pathways' by Noah Fiedel?",
+    "answer": "2022",
+    "source_chunk": "and Noah Fiedel. 2022. Palm: Scaling language mod-\neling with pathways.\nGordon V Cormack, Charles LA Clarke, and Stefan\nBuettcher. 2009. Reciprocal rank fusion outperforms\ncondorcet and individual rank learning methods. In\nProceedings of the 32nd international ACM SIGIR\nconference on Research and development in informa-\ntion retrieval, pages 758\u2013759.\nDeepSeek-AI. 2025.\nDeepseek-r1:\nAn open\nlarge reasoning model family.\narXiv preprint\narXiv:2501.12948.\nShahul Es, Jithin James, Luis Espinosa-Anke, and",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 187,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "Where was the paper 'Reciprocal rank fusion outperforms condorcet and individual rank learning methods' presented?",
+    "answer": "Proceedings of the 32nd international ACM SIGIR conference on Research and development in information retrieval",
+    "source_chunk": "and Noah Fiedel. 2022. Palm: Scaling language mod-\neling with pathways.\nGordon V Cormack, Charles LA Clarke, and Stefan\nBuettcher. 2009. Reciprocal rank fusion outperforms\ncondorcet and individual rank learning methods. In\nProceedings of the 32nd international ACM SIGIR\nconference on Research and development in informa-\ntion retrieval, pages 758\u2013759.\nDeepSeek-AI. 2025.\nDeepseek-r1:\nAn open\nlarge reasoning model family.\narXiv preprint\narXiv:2501.12948.\nShahul Es, Jithin James, Luis Espinosa-Anke, and",
+    "metadata": {
+      "pages": 30,
+      "filename": "paper_003.pdf",
+      "type": "pdf",
+      "chunk_index": 187,
+      "chunk_total": 284
+    }
+  },
+  {
+    "question": "What type of attacks can be achieved using SFaaA on LLMs?",
+    "answer": "Sentiment steering attacks",
+    "source_chunk": "(SFaaA). Using AaaA, we demonstrate how to craft passages to achieve denial-of-service attacks\non LLMs. With SFaaA, we illustrate how to craft passages to achieve sentiment steering attacks on\nLLMs. Extensive evaluations encompassing five datasets, three retriever models, and three LLMs,\nincluding the commercially available GPT-4 and Claude-3, underscore the efficacy of the proposed\napproaches in BadRAG.\n2\nRelated Work\nRetrieval-Augmented Generation (RAG). RAG [16] has emerged as a widely adopted paradigm",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 17,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "How many datasets were used for evaluations of the proposed approaches?",
+    "answer": "Five",
+    "source_chunk": "(SFaaA). Using AaaA, we demonstrate how to craft passages to achieve denial-of-service attacks\non LLMs. With SFaaA, we illustrate how to craft passages to achieve sentiment steering attacks on\nLLMs. Extensive evaluations encompassing five datasets, three retriever models, and three LLMs,\nincluding the commercially available GPT-4 and Claude-3, underscore the efficacy of the proposed\napproaches in BadRAG.\n2\nRelated Work\nRetrieval-Augmented Generation (RAG). RAG [16] has emerged as a widely adopted paradigm",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 17,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What is the name of the paradigm that has emerged as widely adopted?",
+    "answer": "Retrieval-Augmented Generation (RAG)",
+    "source_chunk": "(SFaaA). Using AaaA, we demonstrate how to craft passages to achieve denial-of-service attacks\non LLMs. With SFaaA, we illustrate how to craft passages to achieve sentiment steering attacks on\nLLMs. Extensive evaluations encompassing five datasets, three retriever models, and three LLMs,\nincluding the commercially available GPT-4 and Claude-3, underscore the efficacy of the proposed\napproaches in BadRAG.\n2\nRelated Work\nRetrieval-Augmented Generation (RAG). RAG [16] has emerged as a widely adopted paradigm",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 17,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "How many retriever models were used for evaluations?",
+    "answer": "Three",
+    "source_chunk": "(SFaaA). Using AaaA, we demonstrate how to craft passages to achieve denial-of-service attacks\non LLMs. With SFaaA, we illustrate how to craft passages to achieve sentiment steering attacks on\nLLMs. Extensive evaluations encompassing five datasets, three retriever models, and three LLMs,\nincluding the commercially available GPT-4 and Claude-3, underscore the efficacy of the proposed\napproaches in BadRAG.\n2\nRelated Work\nRetrieval-Augmented Generation (RAG). RAG [16] has emerged as a widely adopted paradigm",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 17,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What are the names of two commercially available LLMs mentioned in the text?",
+    "answer": "GPT-4 and Claude-3",
+    "source_chunk": "(SFaaA). Using AaaA, we demonstrate how to craft passages to achieve denial-of-service attacks\non LLMs. With SFaaA, we illustrate how to craft passages to achieve sentiment steering attacks on\nLLMs. Extensive evaluations encompassing five datasets, three retriever models, and three LLMs,\nincluding the commercially available GPT-4 and Claude-3, underscore the efficacy of the proposed\napproaches in BadRAG.\n2\nRelated Work\nRetrieval-Augmented Generation (RAG). RAG [16] has emerged as a widely adopted paradigm",
+    "metadata": {
+      "pages": 17,
+      "filename": "paper_046.pdf",
+      "type": "pdf",
+      "chunk_index": 17,
+      "chunk_total": 132
+    }
+  },
+  {
+    "question": "What is the formula for zfused?",
+    "answer": "q, w1c1, w2c2, . . . , wncn",
+    "source_chunk": "retrieved chunk is modulated by its corresponding importance weight wi:\nzfused =\n\u0002\nq, w1c1, w2c2, . . . , wncn\n\u0003\n.\nThis sequence is then processed by a transformer encoder g(\u00b7) followed by a a linear classifier h(\u00b7) to\nyield the final prediction:\n\u02c6y(\u03c4)\np\n= h (g(zfused)) .\nTraining Objective. EHR-RAGp is trained end-to-end using a supervised binary cross-entropy loss\nassociated with the target prediction task, while keeping the retrieval encoder, R, frozen and updating",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_008.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 265
+    }
+  },
+  {
+    "question": "What processes the sequence after modulation by importance weights?",
+    "answer": "a transformer encoder g(\u00b7) followed by a linear classifier h(\u00b7)",
+    "source_chunk": "retrieved chunk is modulated by its corresponding importance weight wi:\nzfused =\n\u0002\nq, w1c1, w2c2, . . . , wncn\n\u0003\n.\nThis sequence is then processed by a transformer encoder g(\u00b7) followed by a a linear classifier h(\u00b7) to\nyield the final prediction:\n\u02c6y(\u03c4)\np\n= h (g(zfused)) .\nTraining Objective. EHR-RAGp is trained end-to-end using a supervised binary cross-entropy loss\nassociated with the target prediction task, while keeping the retrieval encoder, R, frozen and updating",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_008.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 265
+    }
+  },
+  {
+    "question": "What is the final prediction yield by the model?",
+    "answer": "\u02c6y(\u03c4) = h (g(zfused))",
+    "source_chunk": "retrieved chunk is modulated by its corresponding importance weight wi:\nzfused =\n\u0002\nq, w1c1, w2c2, . . . , wncn\n\u0003\n.\nThis sequence is then processed by a transformer encoder g(\u00b7) followed by a a linear classifier h(\u00b7) to\nyield the final prediction:\n\u02c6y(\u03c4)\np\n= h (g(zfused)) .\nTraining Objective. EHR-RAGp is trained end-to-end using a supervised binary cross-entropy loss\nassociated with the target prediction task, while keeping the retrieval encoder, R, frozen and updating",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_008.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 265
+    }
+  },
+  {
+    "question": "What type of loss is used for training EHR-RAGp?",
+    "answer": "supervised binary cross-entropy loss",
+    "source_chunk": "retrieved chunk is modulated by its corresponding importance weight wi:\nzfused =\n\u0002\nq, w1c1, w2c2, . . . , wncn\n\u0003\n.\nThis sequence is then processed by a transformer encoder g(\u00b7) followed by a a linear classifier h(\u00b7) to\nyield the final prediction:\n\u02c6y(\u03c4)\np\n= h (g(zfused)) .\nTraining Objective. EHR-RAGp is trained end-to-end using a supervised binary cross-entropy loss\nassociated with the target prediction task, while keeping the retrieval encoder, R, frozen and updating",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_008.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 265
+    }
+  },
+  {
+    "question": "What part of the model is kept frozen during training?",
+    "answer": "the retrieval encoder, R",
+    "source_chunk": "retrieved chunk is modulated by its corresponding importance weight wi:\nzfused =\n\u0002\nq, w1c1, w2c2, . . . , wncn\n\u0003\n.\nThis sequence is then processed by a transformer encoder g(\u00b7) followed by a a linear classifier h(\u00b7) to\nyield the final prediction:\n\u02c6y(\u03c4)\np\n= h (g(zfused)) .\nTraining Objective. EHR-RAGp is trained end-to-end using a supervised binary cross-entropy loss\nassociated with the target prediction task, while keeping the retrieval encoder, R, frozen and updating",
+    "metadata": {
+      "pages": 31,
+      "filename": "paper_008.pdf",
+      "type": "pdf",
+      "chunk_index": 47,
+      "chunk_total": 265
+    }
+  },
+  {
+    "question": "What may LLMs evolve into?",
+    "answer": "A self-driven intent, independent of the biased training process",
+    "source_chunk": "advancement of LLMs and It may evolve into a self-driven intent, independent of the biassed \ntraining process.  \nThe literature review covers four types of deception categorised: Strategic deception, Imitation, \nSycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. \nThe literature around deceptive AI, predominantly available on arXiv archives, manifests a \ndeficiency in contribution from social science. This deficiency could be ascribed to the early",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_026.pdf",
+      "type": "pdf",
+      "chunk_index": 2,
+      "chunk_total": 88
+    }
+  },
+  {
+    "question": "How many types of deception are categorised in the literature review?",
+    "answer": "Four",
+    "source_chunk": "advancement of LLMs and It may evolve into a self-driven intent, independent of the biassed \ntraining process.  \nThe literature review covers four types of deception categorised: Strategic deception, Imitation, \nSycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. \nThe literature around deceptive AI, predominantly available on arXiv archives, manifests a \ndeficiency in contribution from social science. This deficiency could be ascribed to the early",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_026.pdf",
+      "type": "pdf",
+      "chunk_index": 2,
+      "chunk_total": 88
+    }
+  },
+  {
+    "question": "What are the four types of deception categorised in the literature review?",
+    "answer": "Strategic deception, Imitation, Sycophancy, and Unfaithful Reasoning",
+    "source_chunk": "advancement of LLMs and It may evolve into a self-driven intent, independent of the biassed \ntraining process.  \nThe literature review covers four types of deception categorised: Strategic deception, Imitation, \nSycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. \nThe literature around deceptive AI, predominantly available on arXiv archives, manifests a \ndeficiency in contribution from social science. This deficiency could be ascribed to the early",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_026.pdf",
+      "type": "pdf",
+      "chunk_index": 2,
+      "chunk_total": 88
+    }
+  },
+  {
+    "question": "Where is the literature around deceptive AI predominantly available?",
+    "answer": "arXiv archives",
+    "source_chunk": "advancement of LLMs and It may evolve into a self-driven intent, independent of the biassed \ntraining process.  \nThe literature review covers four types of deception categorised: Strategic deception, Imitation, \nSycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. \nThe literature around deceptive AI, predominantly available on arXiv archives, manifests a \ndeficiency in contribution from social science. This deficiency could be ascribed to the early",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_026.pdf",
+      "type": "pdf",
+      "chunk_index": 2,
+      "chunk_total": 88
+    }
+  },
+  {
+    "question": "What field is noted to have a deficiency in contribution to the literature around deceptive AI?",
+    "answer": "Social science",
+    "source_chunk": "advancement of LLMs and It may evolve into a self-driven intent, independent of the biassed \ntraining process.  \nThe literature review covers four types of deception categorised: Strategic deception, Imitation, \nSycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. \nThe literature around deceptive AI, predominantly available on arXiv archives, manifests a \ndeficiency in contribution from social science. This deficiency could be ascribed to the early",
+    "metadata": {
+      "pages": 15,
+      "filename": "paper_026.pdf",
+      "type": "pdf",
+      "chunk_index": 2,
+      "chunk_total": 88
+    }
+  },
+  {
+    "question": "What is the title of the paper by Zarov et al.?",
+    "answer": "Llama 2: Open foundation and fine-tuned chat models.",
+    "source_chunk": "Zarov, I., Zhang, Y., Fan, A., Kambadur, M., Narang, S.,\nRodriguez, A., Stojnic, R., Edunov, S., and Scialom, T.\nLlama 2: Open foundation and \ufb01ne-tuned chat models.\nArXiv, abs/2307.09288, 2023.\nTruong, T. H., Baldwin, T., Verspoor, K. M., and Cohn,\n8",
+    "metadata": {
+      "pages": 11,
+      "filename": "paper_024.pdf",
+      "type": "pdf",
+      "chunk_index": 94,
+      "chunk_total": 123
+    }
+  },
+  {
+    "question": "In what year was the paper by Zarov et al. published?",
+    "answer": "2023",
+    "source_chunk": "Zarov, I., Zhang, Y., Fan, A., Kambadur, M., Narang, S.,\nRodriguez, A., Stojnic, R., Edunov, S., and Scialom, T.\nLlama 2: Open foundation and \ufb01ne-tuned chat models.\nArXiv, abs/2307.09288, 2023.\nTruong, T. H., Baldwin, T., Verspoor, K. M., and Cohn,\n8",
+    "metadata": {
+      "pages": 11,
+      "filename": "paper_024.pdf",
+      "type": "pdf",
+      "chunk_index": 94,
+      "chunk_total": 123
+    }
+  },
+  {
+    "question": "What is the name of the authors of the paper?",
+    "answer": "Zarov, Zhang, Fan, Kambadur, Narang, Rodriguez, Stojnic, Edunov, Scialom",
+    "source_chunk": "Zarov, I., Zhang, Y., Fan, A., Kambadur, M., Narang, S.,\nRodriguez, A., Stojnic, R., Edunov, S., and Scialom, T.\nLlama 2: Open foundation and \ufb01ne-tuned chat models.\nArXiv, abs/2307.09288, 2023.\nTruong, T. H., Baldwin, T., Verspoor, K. M., and Cohn,\n8",
+    "metadata": {
+      "pages": 11,
+      "filename": "paper_024.pdf",
+      "type": "pdf",
+      "chunk_index": 94,
+      "chunk_total": 123
+    }
+  },
+  {
+    "question": "Where was the paper by Zarov et al. published?",
+    "answer": "ArXiv",
+    "source_chunk": "Zarov, I., Zhang, Y., Fan, A., Kambadur, M., Narang, S.,\nRodriguez, A., Stojnic, R., Edunov, S., and Scialom, T.\nLlama 2: Open foundation and \ufb01ne-tuned chat models.\nArXiv, abs/2307.09288, 2023.\nTruong, T. H., Baldwin, T., Verspoor, K. M., and Cohn,\n8",
+    "metadata": {
+      "pages": 11,
+      "filename": "paper_024.pdf",
+      "type": "pdf",
+      "chunk_index": 94,
+      "chunk_total": 123
+    }
+  },
+  {
+    "question": "What is the abstract number of the paper by Zarov et al.?",
+    "answer": "abs/2307.09288",
+    "source_chunk": "Zarov, I., Zhang, Y., Fan, A., Kambadur, M., Narang, S.,\nRodriguez, A., Stojnic, R., Edunov, S., and Scialom, T.\nLlama 2: Open foundation and \ufb01ne-tuned chat models.\nArXiv, abs/2307.09288, 2023.\nTruong, T. H., Baldwin, T., Verspoor, K. M., and Cohn,\n8",
+    "metadata": {
+      "pages": 11,
+      "filename": "paper_024.pdf",
+      "type": "pdf",
+      "chunk_index": 94,
+      "chunk_total": 123
+    }
+  },
+  {
+    "question": "What is the title of the paper by G. Yu?",
+    "answer": "Appagent: Multimodal agents as smartphone users",
+    "source_chunk": "G. Yu, \u201cAppagent: Multimodal agents as smartphone users,\u201d\narXiv:2312.13771, 2023. 1, 10\n[44]\nW. Hong, W. Wang, Q. Lv, J. Xu, W. Yu, J. Ji, Y. Wang, Z. Wang,\nY. Dong, M. Ding et al., \u201cCogagent: A visual language model for\ngui agents,\u201d arXiv:2312.08914, 2023. 1, 3, 10\n[45]\nJ. Wang, H. Xu, J. Ye, M. Yan, W. Shen, J. Zhang, F. Huang, and\nJ. Sang, \u201cMobile-agent: Autonomous multi-modal mobile device\nagent with visual perception,\u201d arXiv:2401.16158, 2024. 1, 10\n[46]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 182,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the arXiv identifier of the paper by W. Hong et al.?",
+    "answer": "arXiv:2312.08914",
+    "source_chunk": "G. Yu, \u201cAppagent: Multimodal agents as smartphone users,\u201d\narXiv:2312.13771, 2023. 1, 10\n[44]\nW. Hong, W. Wang, Q. Lv, J. Xu, W. Yu, J. Ji, Y. Wang, Z. Wang,\nY. Dong, M. Ding et al., \u201cCogagent: A visual language model for\ngui agents,\u201d arXiv:2312.08914, 2023. 1, 3, 10\n[45]\nJ. Wang, H. Xu, J. Ye, M. Yan, W. Shen, J. Zhang, F. Huang, and\nJ. Sang, \u201cMobile-agent: Autonomous multi-modal mobile device\nagent with visual perception,\u201d arXiv:2401.16158, 2024. 1, 10\n[46]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 182,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "In what year was the paper by J. Wang et al. published?",
+    "answer": "2024",
+    "source_chunk": "G. Yu, \u201cAppagent: Multimodal agents as smartphone users,\u201d\narXiv:2312.13771, 2023. 1, 10\n[44]\nW. Hong, W. Wang, Q. Lv, J. Xu, W. Yu, J. Ji, Y. Wang, Z. Wang,\nY. Dong, M. Ding et al., \u201cCogagent: A visual language model for\ngui agents,\u201d arXiv:2312.08914, 2023. 1, 3, 10\n[45]\nJ. Wang, H. Xu, J. Ye, M. Yan, W. Shen, J. Zhang, F. Huang, and\nJ. Sang, \u201cMobile-agent: Autonomous multi-modal mobile device\nagent with visual perception,\u201d arXiv:2401.16158, 2024. 1, 10\n[46]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 182,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the title of the paper by J. Wang et al.?",
+    "answer": "Mobile-agent: Autonomous multi-modal mobile device agent with visual perception",
+    "source_chunk": "G. Yu, \u201cAppagent: Multimodal agents as smartphone users,\u201d\narXiv:2312.13771, 2023. 1, 10\n[44]\nW. Hong, W. Wang, Q. Lv, J. Xu, W. Yu, J. Ji, Y. Wang, Z. Wang,\nY. Dong, M. Ding et al., \u201cCogagent: A visual language model for\ngui agents,\u201d arXiv:2312.08914, 2023. 1, 3, 10\n[45]\nJ. Wang, H. Xu, J. Ye, M. Yan, W. Shen, J. Zhang, F. Huang, and\nJ. Sang, \u201cMobile-agent: Autonomous multi-modal mobile device\nagent with visual perception,\u201d arXiv:2401.16158, 2024. 1, 10\n[46]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 182,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "What is the arXiv identifier of the paper by G. Yu?",
+    "answer": "arXiv:2312.13771",
+    "source_chunk": "G. Yu, \u201cAppagent: Multimodal agents as smartphone users,\u201d\narXiv:2312.13771, 2023. 1, 10\n[44]\nW. Hong, W. Wang, Q. Lv, J. Xu, W. Yu, J. Ji, Y. Wang, Z. Wang,\nY. Dong, M. Ding et al., \u201cCogagent: A visual language model for\ngui agents,\u201d arXiv:2312.08914, 2023. 1, 3, 10\n[45]\nJ. Wang, H. Xu, J. Ye, M. Yan, W. Shen, J. Zhang, F. Huang, and\nJ. Sang, \u201cMobile-agent: Autonomous multi-modal mobile device\nagent with visual perception,\u201d arXiv:2401.16158, 2024. 1, 10\n[46]",
+    "metadata": {
+      "pages": 18,
+      "filename": "paper_048.pdf",
+      "type": "pdf",
+      "chunk_index": 182,
+      "chunk_total": 247
+    }
+  },
+  {
+    "question": "Who edited the Association for Computational Linguistics publication?",
+    "answer": "Fei Xia, Wenjie Li, and Roberto Navigli",
+    "source_chunk": "Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational\nLinguistics, Online, 5054\u20135064. https://doi.org/10.18653/v1/2021.acl-long.392\n[50] Yubao Tang, Ruqing Zhang, Jiafeng Guo, Jiangui Chen, Zuowei Zhu, Shuaiqiang\nWang, Dawei Yin, and Xueqi Cheng. 2023. Semantic-Enhanced Differentiable\nSearch Index Inspired by Learning Strategies. In Proceedings of the 29th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. Association for\nComputing Machinery, New York, NY, USA, 4904\u20134913.",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 150,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What is the DOI of the publication edited by Fei Xia, Wenjie Li, and Roberto Navigli?",
+    "answer": "https://doi.org/10.18653/v1/2021.acl-long.392",
+    "source_chunk": "Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational\nLinguistics, Online, 5054\u20135064. https://doi.org/10.18653/v1/2021.acl-long.392\n[50] Yubao Tang, Ruqing Zhang, Jiafeng Guo, Jiangui Chen, Zuowei Zhu, Shuaiqiang\nWang, Dawei Yin, and Xueqi Cheng. 2023. Semantic-Enhanced Differentiable\nSearch Index Inspired by Learning Strategies. In Proceedings of the 29th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. Association for\nComputing Machinery, New York, NY, USA, 4904\u20134913.",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 150,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "In what year was the publication by Yubao Tang and others presented?",
+    "answer": "2023",
+    "source_chunk": "Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational\nLinguistics, Online, 5054\u20135064. https://doi.org/10.18653/v1/2021.acl-long.392\n[50] Yubao Tang, Ruqing Zhang, Jiafeng Guo, Jiangui Chen, Zuowei Zhu, Shuaiqiang\nWang, Dawei Yin, and Xueqi Cheng. 2023. Semantic-Enhanced Differentiable\nSearch Index Inspired by Learning Strategies. In Proceedings of the 29th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. Association for\nComputing Machinery, New York, NY, USA, 4904\u20134913.",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 150,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What is the title of the publication by Yubao Tang and others?",
+    "answer": "Semantic-Enhanced Differentiable Search Index Inspired by Learning Strategies",
+    "source_chunk": "Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational\nLinguistics, Online, 5054\u20135064. https://doi.org/10.18653/v1/2021.acl-long.392\n[50] Yubao Tang, Ruqing Zhang, Jiafeng Guo, Jiangui Chen, Zuowei Zhu, Shuaiqiang\nWang, Dawei Yin, and Xueqi Cheng. 2023. Semantic-Enhanced Differentiable\nSearch Index Inspired by Learning Strategies. In Proceedings of the 29th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. Association for\nComputing Machinery, New York, NY, USA, 4904\u20134913.",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 150,
+      "chunk_total": 173
+    }
+  },
+  {
+    "question": "What conference did Yubao Tang and others present their publication at?",
+    "answer": "29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "source_chunk": "Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational\nLinguistics, Online, 5054\u20135064. https://doi.org/10.18653/v1/2021.acl-long.392\n[50] Yubao Tang, Ruqing Zhang, Jiafeng Guo, Jiangui Chen, Zuowei Zhu, Shuaiqiang\nWang, Dawei Yin, and Xueqi Cheng. 2023. Semantic-Enhanced Differentiable\nSearch Index Inspired by Learning Strategies. In Proceedings of the 29th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. Association for\nComputing Machinery, New York, NY, USA, 4904\u20134913.",
+    "metadata": {
+      "pages": 12,
+      "filename": "paper_031.pdf",
+      "type": "pdf",
+      "chunk_index": 150,
+      "chunk_total": 173
+    }
+  }
+]

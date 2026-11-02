@@ -1,0 +1,78 @@
+{
+  "generation_model": "openai/gpt-oss-120b",
+  "generation_provider": "groq",
+  "generation_timestamp_utc": "2026-09-29T22:53:14.865241+00:00",
+  "random_seed": 42,
+  "benchmark_size": 250,
+  "target_size": 250,
+  "categories_requested": [
+    "factual",
+    "numerical",
+    "multi_document",
+    "comparison",
+    "conversational",
+    "ambiguous",
+    "unanswerable",
+    "adversarial"
+  ],
+  "category_counts": {
+    "factual": 52,
+    "numerical": 37,
+    "multi_document": 32,
+    "comparison": 32,
+    "conversational": 32,
+    "ambiguous": 25,
+    "unanswerable": 25,
+    "adversarial": 15
+  },
+  "evidence_status_counts": {
+    "sufficient": 197,
+    "insufficient": 28,
+    "ambiguous": 25
+  },
+  "corpus_source": "data/processed/faiss_metadata.json",
+  "corpus_num_chunks": 7492,
+  "corpus_num_documents": 52,
+  "id_scheme": "bq_{category}_{sha256(category|sorted(seed_chunk_ids)|question)[:12]}. Deterministic given identical inputs; NOT guaranteed identical across independent regenerations since LLM question text is not byte-deterministic across API calls. See docs/benchmark.md #5.",
+  "reference_answers": "Automatically generated and automatically validated by an LLM judge (second pass). These are NOT human-annotated ground truth — see docs/benchmark.md 'Limitations'.",
+  "multi_document_necessity_validation": "Automatically LLM-judged (checks that no single gold chunk alone fully answers the question). NOT human-annotated. See docs/benchmark.md #1.",
+  "unanswerable_validation": "Automatically LLM-judged against the seed chunk plus the top-8 BM25-lexically-similar chunks in the whole corpus. Does NOT prove corpus-wide absence of evidence — see docs/benchmark.md #3.",
+  "gold_evidence_id_scheme": "gold_chunk_ids computed via retrieval.identity.chunk_identity_key (the same function the production retrieval pipeline uses); gold_document_ids use metadata['document_id'] if present, else metadata['filename'] as a surrogate, since the committed faiss_metadata.json predates document_id being recorded.",
+  "qc_counters": {
+    "total_attempts": 350,
+    "total_generated": 319,
+    "total_accepted": 250,
+    "total_rejected": 100,
+    "schema_valid": 250,
+    "corpus_valid": 250,
+    "multi_doc_necessity_validated": 110,
+    "unanswerable_validation_passed": 25,
+    "reference_answer_validation_passed": 197,
+    "rejected_by_reason": {
+      "reference_answer_unsupported": 52,
+      "necessity_check_failed": 28,
+      "unanswerable_validation_failed": 3,
+      "duplicate_id": 16,
+      "checkpoint_repair_invalid_item": 1
+    },
+    "rejected_by_category": {
+      "factual": 1,
+      "numerical": 4,
+      "multi_document": 50,
+      "comparison": 24,
+      "unanswerable": 3,
+      "adversarial": 18
+    }
+  },
+  "api_usage": {
+    "total_requests": 2,
+    "successful_requests": 2,
+    "failed_requests": 0,
+    "retry_count": 0,
+    "estimated_input_tokens": 535,
+    "estimated_output_tokens": 122,
+    "estimated_total_tokens": 657
+  },
+  "target_reached": true,
+  "shortfall_by_category": {}
+}

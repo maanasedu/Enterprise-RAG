@@ -1,0 +1,1091 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-29T23:20:09.998880+00:00",
+  "split": "calibration",
+  "benchmark_file": "data\\evaluation\\calibration.json",
+  "benchmark_sha256": "7e2a0c5734c258d1fb9fa50ea464e675b3be8f6cf847dcad5a0e8837e4c110cc",
+  "protocol": {
+    "top_k_retrieve": 50,
+    "depth_scored": 10,
+    "rrf_k": 60,
+    "recall_ks": [
+      5,
+      10
+    ],
+    "ndcg_k": 5,
+    "mrr": "MRR@10 (0 when no gold chunk is within the top 10)",
+    "relevance": "binary; a retrieved chunk is relevant iff chunk_identity_key(chunk) is in gold_chunk_ids",
+    "aggregation": "macro-average over scorable questions",
+    "excluded": "questions with empty gold_chunk_ids (unanswerable, insufficient, ambiguous, adversarial-insufficient) are not scored",
+    "hyperparameters_tuned": false,
+    "bootstrap": {
+      "seed": 42,
+      "resamples": 2000,
+      "interval": "percentile 95%"
+    }
+  },
+  "counts": {
+    "n_questions": 48,
+    "n_scored": 36,
+    "n_excluded": 12,
+    "scored_by_category": {
+      "adversarial": 1,
+      "comparison": 6,
+      "conversational": 6,
+      "factual": 10,
+      "multi_document": 6,
+      "numerical": 7
+    },
+    "excluded_by_category": {
+      "adversarial": 2,
+      "ambiguous": 5,
+      "unanswerable": 5
+    },
+    "excluded_by_evidence_status": {
+      "ambiguous": 5,
+      "insufficient": 7
+    }
+  },
+  "configs": {
+    "hybrid_cohere": {
+      "label": "Hybrid + Cohere Reranker",
+      "n_scored": 36,
+      "metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "mrr": 0.649074074074074,
+        "ndcg@5": 0.6250899809383744
+      },
+      "ci95": {
+        "recall@5": [
+          0.5277777777777778,
+          0.8055555555555556
+        ],
+        "recall@10": [
+          0.5277777777777778,
+          0.8055555555555556
+        ],
+        "mrr": [
+          0.49812500000000004,
+          0.800949074074074
+        ],
+        "ndcg@5": [
+          0.48353972549449636,
+          0.7720757635849045
+        ]
+      },
+      "supplementary": {
+        "all_gold@5": 0.6111111111111112,
+        "all_gold@10": 0.6111111111111112
+      },
+      "by_category": {
+        "adversarial": {
+          "n": 1,
+          "metrics": {
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "ndcg@5": 1.0
+          }
+        },
+        "comparison": {
+          "n": 6,
+          "metrics": {
+            "recall@5": 0.25,
+            "recall@10": 0.25,
+            "mrr": 0.2222222222222222,
+            "ndcg@5": 0.2177622660637882
+          }
+        },
+        "conversational": {
+          "n": 6,
+          "metrics": {
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 0.7555555555555555,
+            "ndcg@5": 0.8144754678724236
+          }
+        },
+        "factual": {
+          "n": 10,
+          "metrics": {
+            "recall@5": 0.8,
+            "recall@10": 0.8,
+            "mrr": 0.8,
+            "ndcg@5": 0.8
+          }
+        },
+        "multi_document": {
+          "n": 6,
+          "metrics": {
+            "recall@5": 0.75,
+            "recall@10": 0.75,
+            "mrr": 1.0,
+            "ndcg@5": 0.779813859432125
+          }
+        },
+        "numerical": {
+          "n": 7,
+          "metrics": {
+            "recall@5": 0.42857142857142855,
+            "recall@10": 0.42857142857142855,
+            "mrr": 0.35714285714285715,
+            "ndcg@5": 0.3758471076530654
+          }
+        }
+      },
+      "rerank_fallback_questions": 0,
+      "reranker_model": "rerank-english-v3.0",
+      "per_question": [
+        {
+          "id": "bq_factual_2b958f14a3d6",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:a65f6d56f8601d873bb8e139ed64983cd7c0ac33e058c15e94a1db0b199050ca"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:ab8c1d069a4bdcc0b630bcc3209b282c6e33d3cbf1fa96359045dbf864673ed1",
+            "text-hash:37bf6b17736dc3edca5fb7cd50cc06c1e8ff8290cf21bd9d64f6de8b045b7563",
+            "text-hash:1c4acdd219b43a54421a0add8a8317ca4ea4fb3fd49f76a5c98d375f06b75d44",
+            "text-hash:ab2cd032d99eccb8bec15abebfb1d6c693729a13a2bfaabff3307e02342d5803",
+            "text-hash:369415b3eb28fda4c3fb3caf09fe1d43dfe68b2be67656694e89fd5783e95c44",
+            "text-hash:d01ddd904d4ce39455e95d5719979be4424621c0f7e7cd1c6c1cd333df2e3bed",
+            "text-hash:abcbd034b5a00cc262d0fc9a163843d7f12668582503ee7afa8397815a654d89",
+            "text-hash:120de15597c00da35655241a39d956847c1a03fb6aad29cef602c297a95edf29",
+            "text-hash:1f2b14b5f6f0165cb22d57da5652048f350c5107935ecc4e5330c4d75e169ed4",
+            "text-hash:37accc2a329708d8cbc668f99cb352d88d6bec26ca72a83c5f10cab6b0f428fa"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_factual_72e86af962e4",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:716027bf9acdcd05daa12cb3bdd219cca633c48f8c6c0628eaf2e55e17781885"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:716027bf9acdcd05daa12cb3bdd219cca633c48f8c6c0628eaf2e55e17781885",
+            "text-hash:1ce3e02b71bbba60bb0b80996de7dc883555c057a7c895bd93401654ac8fedf7",
+            "text-hash:c5d3ae65fde49250886db1609e3c88f41dd4c8dcb4acde5330984283e58f97ad",
+            "text-hash:7c1dc1b12396cf24fd8df0bf5a1da00ac572abc4eec45e02c4c28ada225320f3",
+            "text-hash:883d1bf812531141d8e6565141fd7fe4d0cc9933ecd0f7d41dd15e7c4f892f1b",
+            "text-hash:225aa9965d1a1306ff8ec02c9dba70c7c45a1af55eead57914b4efa1c6a46d47",
+            "text-hash:daf70f889155d92a0099f224180be90c0b78827ec8dcfa47a49bab8886303c25",
+            "text-hash:9f3b985a52be39c737db07a92a0e112c3ba44f2b7bc734342c1e2236cf9c9e72",
+            "text-hash:bd1f486fb0f0576f39662c7021dc0b4ab5f49294f1dd91555858c621c2d702b1",
+            "text-hash:6c5b1ac52febd09191eea5ea59f95fba6815e490384f3d0a42dd69634ce0ee88"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_8029798ed87a",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:1830889b06079b6d788686488d4a8b67027965a016534c002f42774a08cb731f"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:84457c9fd0ba290f96bfc47951a2eb10c26199b937a6a3cd28e9381f8ff76ebb",
+            "text-hash:7233ddb3bb9648ee8731f3099fb87afcf844d38e29bbd444bef2c1079398e3f2",
+            "text-hash:b75d04efc400def10af6804ab0c9d08045a1dd3bb399b5edd155a4bd130aea3d",
+            "text-hash:91f0b03139819bf60a70f2ec51cf9f5f1429192616bdd294466d6a1b42accf25",
+            "text-hash:8bc9cbe6736a0a566792c6ebfe4a44fa43b937b893937aca314e66c56b3b8603",
+            "text-hash:c269a87520744e70591d4bff32d4335e57e752123183b155732912cc850588e3",
+            "text-hash:25b3d16a936776d55fbb8fc1fedd95dc418c776bb768952d06fbc763b0d3bc86",
+            "text-hash:2a26f1d34cb88ebb0e51796e6edafd91e2573082a40cdb716b6ccfe6a3d46498",
+            "text-hash:41754624c309ad867970d2fa1dd243ee9c5ed715df9c70bc421fe17b65ce7c99",
+            "text-hash:2f12d1883cd7e376964df4f11b766a2399b2271c95537615d3b36947f320e4fa"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_factual_0d9763c5112a",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:0137f605fd0d10ec384dff13ef0f9ba9a96f18dd3ce873221cb39d9ae6fe0d82"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:0137f605fd0d10ec384dff13ef0f9ba9a96f18dd3ce873221cb39d9ae6fe0d82",
+            "text-hash:1c7719b07db7f477e50397c6e821bd60fe202657bd70cf870b96fd004cddc060",
+            "text-hash:e06db8db273889d058e36967847b659d64d88df6c9a517c40ed27bf9eafd6071",
+            "text-hash:3dd09a01aa8633a99a62d9fd266f0717746d93253c4ade59833c9fdfcdb8c3d4",
+            "text-hash:309a57ff458df5dceaa57f44e0376def0790640d17df1d8c43b6eee170743030",
+            "text-hash:b21e7624deacdbc67089dfe3eea1707c2aca215b094343b85ce4a6c30b062800",
+            "text-hash:0ec7cb61881db1ebd2cb21c6d7939ae908985d4378d0bbadce21ae9b02cc8921",
+            "text-hash:4cd35f2bf5bb4470754ba804240b3fb194a03402b2875a24e5e71ce41c73a243",
+            "text-hash:ddc763f1b91d2f30f4761ed7fa344641d9869276c632db609cd833eaef75be3f",
+            "text-hash:14518f21ac5e7940646d7aea6668241f8c23e7b62d151c9ec19e15047693c962"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_663d72c48c2c",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:e3365f7142e481ea5f57461f4236c2d40463b724e852d47fd04e5506b083239f"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:e3365f7142e481ea5f57461f4236c2d40463b724e852d47fd04e5506b083239f",
+            "text-hash:6d54cb9338c4169602756be7e0ebd0e26f879c435df82a35496a34d118d42efa",
+            "text-hash:632f628e538e92ced400da5f7b3026cd01d173c5011421f92835cfa9459ed340",
+            "text-hash:5bd5ecd2a88d3ec53b0e084fd8947abb21a26e1da0907bc7fbe31e8a1e655617",
+            "text-hash:bb7e21710745481e2e277684950daf9bd6cf42ef176a02d144b6111dc9252656",
+            "text-hash:07ddf0adf99912a782f14e22baa311848e982535a9350a1db7accf856bfaa9ba",
+            "text-hash:a628000f088180dea7bdc5ea67776238fa6e1035770562b45b9785d14b4db804",
+            "text-hash:3188ad05a77e02202c81c816e445df54d2d3b5e9ccd1487a3626b723fdcdfe50",
+            "text-hash:80726d738037b8fdb7927ca3e08d4571d7af2a1f7baaa5ad5d8e3c3f5ea696df",
+            "text-hash:41093d5efbd274ad5427a86cda5e1dd457c4bd645cfb437774f8d219ef3ddde4"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_c99c6ff66c2f",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:3e5fc8453381e1281e2efd83084de94b6bff286e0a0a8414b50ea93df575576f"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:3e5fc8453381e1281e2efd83084de94b6bff286e0a0a8414b50ea93df575576f",
+            "text-hash:ff8a6167cf67ec348ec3eee731d5d58851075637d942bbeee6f19a95563411a1",
+            "text-hash:ed88f3bd229b3034a58e9128b6f5499d0e36e8df295182766f951ad5f23d5217",
+            "text-hash:076a8b23264c30060b5708b4a188b12571e2751c927ec8556e4561e2a8b0c42d",
+            "text-hash:3528d3c905899e57990a081381a14d8db23120472534a22fe39c70e405e8b599",
+            "text-hash:569cec2dd6e4d88070f0eef10bf1cba81e7b7c9921829e6dddaaade10b0a3264",
+            "text-hash:7f2225802233a93d216e8ed6c019f861597061c43e179e94a0f01474849464d2",
+            "text-hash:edb584a6fdc86b940e890b7e192e4979c0d6d15ad04785a9506d2e49b8ffbed0",
+            "text-hash:3646d9746e42b7633f9aba37b64fa9913b6670454a481eec8ab377b65d508689",
+            "text-hash:01480a0e08117beefa87146d21bfa3a4c2d9433b474ebbea0ae583a92bda88fa"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_5931e5a05079",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:4269136ba489198774611f2432b47b784f68116acce638de4c6c5da145cbf8e5"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:4269136ba489198774611f2432b47b784f68116acce638de4c6c5da145cbf8e5",
+            "text-hash:47f6531702927f982f70c6ac0344014a7ce03a76b13752f058d4d96063fb406a",
+            "text-hash:3fc55971153756681f0a55dadfb81a1cfa06a927ad6989058e3fe3d806d10c5e",
+            "text-hash:3e8a81bc0213551aeb203d3866ce8bbe72818c560a93fd67a749f97222866842",
+            "text-hash:c01cf766622afa1be8188328ba9e46681a11a73915dcbc3c35884513cea239f9",
+            "text-hash:b7e0330e2fcfb20471439819c4f3bd0d6943b1251e5cbb0b8bbf462d582ca0a1",
+            "text-hash:6c8655c8c5138279162586108316959fbaf341c4a6ac4cd8a26c220ca6b40cb8",
+            "text-hash:6393e7b3ac816d1b303f261b1d48e4497b2b9e734d5dece58278cfb1cee74153",
+            "text-hash:0a26e49de90985b77c56accadd03e0f6f12ae43e48dce98dbfcb84bd51d57eaf",
+            "text-hash:03a2396dc9e13c4b84532c7b6a0bca53ac1e5a70f135824a19e8dc53198d3cac"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_caf398904939",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:7ef3697f27d019bdb75cabe1fd2c8a4232d8691d824ed07290bcbcc4e6d53eb3"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:7ef3697f27d019bdb75cabe1fd2c8a4232d8691d824ed07290bcbcc4e6d53eb3",
+            "text-hash:31e0d4cdbcd2cc217ed4e80046f8211f14caec49ad05f0746df29fa36064ba14",
+            "text-hash:32723276d737ad5ed8cf9a6bb5a14c37fab3210e167e8a8ccfcd806eede4215c",
+            "text-hash:abd78583859c4d6c7e0984e2c3e7b1ce70b1282de291e0244caf7af47a3f0bbe",
+            "text-hash:5bf568308e140799e997d9b5d674036944482bbab2427c9ceac15d81340c5979",
+            "text-hash:2f76556cfa0153297f832555426086554025f2e7d2845c2a9a96d00446b8adab",
+            "text-hash:d9c8e9ca426d2be32264028de55eac565f69232d65c4b0649df18dd4315dbcea",
+            "text-hash:2da884c610b501432b9d948068e676a55dd03ec4a4f104a6245b7e4f04e5b411",
+            "text-hash:1a6f125a85f6ec61a31c980f5c2e0ff240753d0cabe173b196bba1d439ac8b2b",
+            "text-hash:61bd7f98102f6f8fe9e61d73b7ea7751e80585bf9d7865119f593748d08739e4"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_65467a2d6dbe",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:b493c7cde35398d8f3add444eba59b54c0a7b5def8cc08467e02bf2329f6ca52"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:b493c7cde35398d8f3add444eba59b54c0a7b5def8cc08467e02bf2329f6ca52",
+            "text-hash:90c8f7566bbef6b2c0dd6be240820c2b96456dda6add13c187aee390eea342d1",
+            "text-hash:86e08601d90b90e2efd3d48c33d6255bd216f9599b902cb2c2bd4cda89c53716",
+            "text-hash:cd59d3c9252f7ab2f88dc19de4b5c578b7ec925fc8273030852a592ff111dccd",
+            "text-hash:b97f41b307960e867d8d499b00b2c630afb59d293da00ac7f238a3235c4f8d8b",
+            "text-hash:94842d5bef4d4e853cd0010cd9297061b1d5a5c65869c3dec6433104262a47ce",
+            "text-hash:59527c7b95b12cc5fc199598277b790798d0788786804d3b6182ca015fc87f71",
+            "text-hash:8cf9fcdcc3f534689d3df39022b9b63ee6c0140c70a94071d5cc44bce5f236f1",
+            "text-hash:ec8e57c1a55f1233eda251f1e6b3a5722154d8679a096d0342c647ae7d7daf13",
+            "text-hash:1628e066fedf9845ff154de151244c0db5f964a265018e15ad0e4915d069c958"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_factual_427ae698e616",
+          "category": "factual",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:de9ebf815914e5f93a4db31411a9f8a2d61fa8071c8c58da1bf6095a72b037f9"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:de9ebf815914e5f93a4db31411a9f8a2d61fa8071c8c58da1bf6095a72b037f9",
+            "text-hash:004e2d8bdc5c7db5b7a38a15d24e067df1300e58f902a2b7b860c4d9d57669da",
+            "text-hash:48d9006b6c1f942292d9ceb59aa0fbe47f303a9c7a6ce2ef87707fa71a92c77b",
+            "text-hash:8a47bc40afded6c291765f4cf8a50d104bbddb2e2c03a777fb104fd5d482484b",
+            "text-hash:ce4ce568176ce5de489d32662e11304e443e869d6ef467181669fb059ed9b9e9",
+            "text-hash:6323dd63a20054637fef48538b3fa7bbfbb9f18b656cdee05aadec9228af12c4",
+            "text-hash:8d0d8455b772372a763be7431eda24c4840438e04a7c871053a81e2ba1544992",
+            "text-hash:001557c43a35080cefb8ff412d825f93a1610712d5bc1a701d60f08530f10803",
+            "text-hash:1325d742d709017069f8ec1ff5ecbd556ec6fcac1181b71c29f5480531de959b",
+            "text-hash:eb6c1fd6b15944b76bfdc3539d92badf7593fa2b048d8737a6b25b5493a81292"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_numerical_4054e908df70",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:ed005cef34157621724eb2252fc94efa3098b652cf39ff0973155682446c6699"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:c775f217a890ca216edcb100b1a7b5ac626518706fc14069c82c06b49e6f2143",
+            "text-hash:3106fb833b4c97c24728d79cbd4928716431a38d1a1a43144cbe63cd3429d332",
+            "text-hash:cd3c8dcd08a0bafb5b8a1603e606568390928d31cdc9a11115781e409f2dbd40",
+            "text-hash:74dcd89dd90c94933058cb47e98bc4251220e2401ca247ed8d9160f0cd6be5a4",
+            "text-hash:bf26c74a7beb7f5ebad047c30f26fac7f0c5c9b8c783928e5b53c06a9503197c",
+            "text-hash:fd7cc6e4d0f72722f4f8a49668be6ff420c8e1253caebf1e44e1f12705f2752d",
+            "text-hash:e440d421ba9cc4f193b502e54bc0dc2d84ffa4c254d0c3618870f64bd2e26392",
+            "text-hash:11aa8b6b002d90b92cb0e0ef30c8ff851823bf6e3c039de6b84b0df9e5fd5222",
+            "text-hash:0065f86d69f62aa9fa8f2c5383c29184204eb863c957fe11c2e4caa14d59cdaf",
+            "text-hash:fe9ebaeaa034fdfbdac92b315b1d8b0821d2b9b0bf8bfd6aed25dcb1dbd42c62"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_numerical_0b007210a4db",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:9d0423d0f6e9c87a62acb131131ff10c087af40d72ca1c3ad49e0ff1cdc0f7c6"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:81bc1af640b4774cfdd3667a551c5d4ee182679d4ff90dcc7e672a7da5fb0929",
+            "text-hash:9d0423d0f6e9c87a62acb131131ff10c087af40d72ca1c3ad49e0ff1cdc0f7c6",
+            "text-hash:b5dc8ae2de0dfade7376cc3ae37561e34a556a0d74fbdf66b44fde65bbf8d76d",
+            "text-hash:94a9d90f7abc6369afa059b77d76fb8094a5b913a0e7c6932c069bfef6ce4be2",
+            "text-hash:a698ac94c1c2037bd31c848c2966d9e9abd1bc7e76ccfe3878e5e5590241a981",
+            "text-hash:8a0e5da7b23f737b7c46fae3e3680e139ca0ba9abf0ac4e7daa30b9005a4f3c3",
+            "text-hash:758bf70415c0deb991150d908b1c4f6adc1e1d213d129d9331c1da2280832167",
+            "text-hash:93e1e49e4d6388112969a3469ac1fb4a21f05876a13dd21db2bb7d6bcc5a6229",
+            "text-hash:f0416f6b815fddfeaea19e93ea56d27620fb7ca0efa08a30b997198bd5d099ce",
+            "text-hash:1320c3953cc45a1d40674f1f335724e12c8bd3e747ad0950833eb73bb27bf201"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_numerical_3b35bdb8221b",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:341efb90edb95cf3a255e8d40a57b0dce116e29435567a74c182d57cf5d2e0aa"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:aee759a4489a8582d8a734c21a4a58376a3bc622b0b0ca31e38d69a6495dd28c",
+            "text-hash:54b78bf8fbc70b5b4d02c59da8e8109c7ee6da285ed6d5bc4b290636bb702ecf",
+            "text-hash:5725537de4ca3d984780fa2b196b3e2ba65d7ba76eeee3c1848bc683a6df95c8",
+            "text-hash:a21bd86929b7dc2f25f2473a5c98a541b4d316eebd36393054b9d372e8ec79ec",
+            "text-hash:e38228a5f75591cd7a374e743e2af90aadf02ce65de628efb56a3df4fbbc70b2",
+            "text-hash:a32dac96215dc81c885d0a8421a704e236ce98447d70cc3050e96c8dbaab148e",
+            "text-hash:1320c3953cc45a1d40674f1f335724e12c8bd3e747ad0950833eb73bb27bf201",
+            "text-hash:225184422e4a301e98864c7a3960312d5c48abf5b88d7e924bda97b08deeaa3a",
+            "text-hash:79bc0f92618d5b81a3c18cdd5be284feddb5dfd2d5a276cde0d2345ab1d5c1fe",
+            "text-hash:ceed0afe76933cd535544bb4e9eb8fb2efda88cd222d1419f33d4961bc9b07a3"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_numerical_b1d5bf92cd40",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:de30dc08edb92c17006275dfe11d26ed50f057b07e04d5c7069f815e153d3053"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:de30dc08edb92c17006275dfe11d26ed50f057b07e04d5c7069f815e153d3053",
+            "text-hash:ad881185684f0ac0ec7f5a2e02316c2fa0992a4b632bbdb10f8574818b6e84f0",
+            "text-hash:447f444df2adcbad4009ff48156c6aee87678ed17f3c7b3ef35b0943d1312a6d",
+            "text-hash:76ad9bdfd85cbb7d8f47c61c65f16c12789798dcba67facb7e03bb752f27828a",
+            "text-hash:8f026763827168aa78c4188354c87f2848ba708c3f14743c30fd8624835a9730",
+            "text-hash:1f15b27452296d7ce75722402c20fdaf72251d78e7b8097d62b9c5fa531994d2",
+            "text-hash:d5a827642853ea5d71de85aaaffefee86ea7cc09ee650b02d5c52154571b0b3c",
+            "text-hash:cfc14320a46e505656a3d6c695527e834896802294f34fff62d7c4e7f6f6b4c1",
+            "text-hash:8d32cf57060ac32445f2ef725c0b7c7d94b9d978d2edafc2c2c8e2348379eecb",
+            "text-hash:e019b64db7b4b3638e99cb620d4f0e2d0d96cbe8f114ebca9d5191ed0af1bd5d"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_numerical_f09eb51935d5",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:7612c5fffab46205f86fc38e309abab82046ab2f22d69ea5dc2b2de2ec4a82e3"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:28f7cbe3c915aa447451bfac2edc9644da6f147a872e814911c672a0bcf401a5",
+            "text-hash:87772d3cea2542087586b676b2b02c75b5ffc2f31f5af8a55259a70d7f44a868",
+            "text-hash:c2ba076f9ccb8dc801cd8bc64d8e18f91c776c2c06cd7a9d9d0692041fcdfe80",
+            "text-hash:c4aa7c98a44a1b70ccd7af5076b6dd54dc3e53e655dcc7ce2a591de982a1a4dc",
+            "text-hash:445273ae3902ec458be79ae9d7ae147245a8c559235eafc8940ed9f5de9a0e14",
+            "text-hash:6f1108039d486b09e03972a7dbe88d449c244d87746a3daa02ea71668ab394cc",
+            "text-hash:d862f21adebd12815d66a36783dc1de9f8bb9790f831e9fa42e476a88198845b",
+            "text-hash:7e93845ece27652aba33af798c18cdf9677785a92dc1aa3411e857e9d6cd6502",
+            "text-hash:7380bb2b5e7c2d8f94b79feec9ec8b566c67e1133f2e82b27bfb80d48c9499ce",
+            "text-hash:3c3622cc5f96acdd0228595c768290822dfe9241381dcae8f3e53ac9e7947d67"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_numerical_9927ea363874",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:7a954f7939c09e4410bcdfb5a510aa7c253d29e7b09046e02d4d0eb3824b9c7d"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:7a954f7939c09e4410bcdfb5a510aa7c253d29e7b09046e02d4d0eb3824b9c7d",
+            "text-hash:ad450d82e2b7a52349578b4f7f108cc4aa75d04e47255f8518f46c7c44e1ea54",
+            "text-hash:ef168c6a71227a55f637696da5ec7af4889de17cc572a5f86729e6257e3d32d5",
+            "text-hash:09453e21f8380809240872f9cb93408e6d34b7ef417a3de41b7b09d397083d39",
+            "text-hash:3663ba288552698f48bd792c580c0e3539e364b328a20b95a4b8c12c65ffe0cc",
+            "text-hash:24952e060e3a386d4387ac8d10a802e9a4ff475fdfc84f8fd6ae1c91d686a9d0",
+            "text-hash:8fbf932e33ede5853e36eed0605cc56096d103ca51c63e15a67080d7ad4759e7",
+            "text-hash:25b388ab77d78fce39a2741297bb5a135d3a4087244d04e88d14cd739c68f09b",
+            "text-hash:f8c7bf2ed53f568dae18e4e1136c3fa7df6c4aa56c3c22e0c097795aacb0badc",
+            "text-hash:573dc32327f932aa7fe5c97290d320d759696cbe7051c29850ad8893c16762fb"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_numerical_9758db2ca275",
+          "category": "numerical",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:4364591374a4a5dd469c645011265cdd3f1de810ed5aff1c02fdc04044b5400b"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:a88f4e0b601b49a4a580329a9627a9f464cc6ab7efb43e80437ab9f3a59e23d7",
+            "text-hash:eebf110b85f35bc63a6032ee24d9db72953e5e40d6a228a3283b72e590fba162",
+            "text-hash:ce9490a4f184fc2b01eda3451928461c64596749f66b0547341559f0e9fffacc",
+            "text-hash:b3f8a2705a1db24f5e6f30a636b44ca27b2627e9a5f4d0b1fca8fb5b0c6d5e4b",
+            "text-hash:e7a684f7df5ada5f7426deffa6601c017bc709b09c95b01ec1855c318f2722c8",
+            "text-hash:f50c2ac81445cd92aaf3e15b59618f0a37315e12c68321aff0049c0c16d7c578",
+            "text-hash:498da809f921e8c0445447c55b0ed379f594ea9b9e41c2c9be16a7ededd3f42c",
+            "text-hash:42f764b178182fddeca338cca5e88526254cf3ae8db1d49a2efc7cfe39378da3",
+            "text-hash:9b5bf32a2cea66327c88c60e7f8de319ae8b6478c35f161d60d55e8e929dffe8",
+            "text-hash:1c9a0a947475eaac7b4818be54f4f8f7d3c78058420ba4850400c1d7d1fd1e54"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_multi_document_3871b6843af9",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:fe0972775dbdd9c1ee1b41612e5a916334cd4d35212e57503d1a857f407301d9",
+            "text-hash:0f27fba983ed099e4c4a5b786a95ffc210f3b821010845559c1fbb9bef191092"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:fe0972775dbdd9c1ee1b41612e5a916334cd4d35212e57503d1a857f407301d9",
+            "text-hash:0f27fba983ed099e4c4a5b786a95ffc210f3b821010845559c1fbb9bef191092",
+            "text-hash:5de0abcb290e10fa6ce3a9e92cd763732159dc6cf3c7e8514be817e0b9ad8c08",
+            "text-hash:c7d36ae0cfef0c9410a340551d13b07424c8d2b6749323a3d5f3043b8097b3d0",
+            "text-hash:af2429fe0524964e9f135e1bd1b322c3fdaa0f3c950b99cfab269f93daea8251",
+            "text-hash:f264f1d1390497d944088a300fb9fca9de619ac792fdb1bb212264a29445ac4c",
+            "text-hash:bfd58d131fd762b1b02efd42b4eaec513d828582db14731fd8627477d0f275f7",
+            "text-hash:dd7bf49f9147d2fab1d0c0d3c4fb7e8a3228a4f19cfb325243871d44b620e277",
+            "text-hash:300715f01fa0e69f43e6310c5037ba0a65364c9759ee2963b2dcced3ecc109ac",
+            "text-hash:4d0f1de611893ca34ac94d09a38b715e0431181d99298e1f086e2667995f08b7"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_multi_document_023fae852228",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:ac6b96e7d4a102aec680855ef04597dad5b67112745e8e89cbf5c03d361cbfb9",
+            "text-hash:da011b237e417d9c5a6578fffee7ca9ad0a63b338bf0cd2148428755522a7d97"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:ac6b96e7d4a102aec680855ef04597dad5b67112745e8e89cbf5c03d361cbfb9",
+            "text-hash:8b7a5561e8b3077d6737ccd5d2c84789d33d124bde6c354219904bdc690052bd",
+            "text-hash:da011b237e417d9c5a6578fffee7ca9ad0a63b338bf0cd2148428755522a7d97",
+            "text-hash:63887586ab4a3efc4c4f97a11c5a440351533d806f76e80f4ed75df684a0fd8c",
+            "text-hash:de0feaa01a5b30d2ab446a403616048b0e5d525d9e8bad670d72cb239cfee262",
+            "text-hash:e4aa0ef4da0db2f18db0878bf617b282f773e856914ef39a2c450a50a4d5d391",
+            "text-hash:d939538e44b07379d2604500fa4f56d0c4c079039ed22feaa63ca3667981edcd",
+            "text-hash:69f05a63337aa2161a05e5cab99157faad2efc03a1b06653a146570a42b16496",
+            "text-hash:01d8134ca481af6e885a2a9c41fa2de4ece7351075c389ab482c539acb5fd7b1",
+            "text-hash:c894ecc4050ad79754520e19e4491cedba204b2e10d2e98418c1d5e1a4524c46"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.9197207891481876,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_multi_document_cec2a2ed56f6",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:b9411200b116365e010c1eeb10d111d0a5cb4e25cc87ee11826b34aba90f2ba3",
+            "text-hash:84b4aa7b4e6f7534587f17c03780a45e671be4aaf342722d84a859a4eb6d3d45"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:84b4aa7b4e6f7534587f17c03780a45e671be4aaf342722d84a859a4eb6d3d45",
+            "text-hash:66fcb1cf9fd170df9a41cde87ddd2e603bc17d85c6d76f4f2d66ef09f5820916",
+            "text-hash:b9411200b116365e010c1eeb10d111d0a5cb4e25cc87ee11826b34aba90f2ba3",
+            "text-hash:a564f54d85b3d62721f0e4195ebf0bb140a3a559f13774cab14882d04a0493bc",
+            "text-hash:d06d975d27124ed2a829a63a6d162b115e869f1dfd9224809b90322aa23b0c75",
+            "text-hash:39473a12c282f2dcbae1223a2365570015f3afb0b12f6765982aa3ffcbb809a6",
+            "text-hash:63cd7b9ff0f67da9021e3831fbec5dbfb66d8a847df59286c9c1b7488a767983",
+            "text-hash:dfe7727ad5aff91eb0c0a9e50608ea46a5486ac49673454b839fa4e944695596",
+            "text-hash:70f2ee9f592a6c0b7c997f54d87a9a9dd67e2c9d0aaf2e94241d398f8ae4e4ca",
+            "text-hash:41830ee15dc515f065d008843f2732601561eeeeae8b333e30e5ba97bc845bb4"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 0.9197207891481876,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_multi_document_7fcd189e1668",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:ab5075a341543ba9512f4b4e140961fb04b001d04410f72a03274f40d3e5a524",
+            "text-hash:973f642ce9b0a4f1f70c8f62f788539dd0c86e584a5431abd3107c526c3dc5d9"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:973f642ce9b0a4f1f70c8f62f788539dd0c86e584a5431abd3107c526c3dc5d9",
+            "text-hash:9887c4c117153f2017c63054f4470d30f1dc0d6c9cbb9349dbe8b6419bb18a91",
+            "text-hash:7a0ce084738d911df2e37164bbf9677da9073a324b06943ebd6025d5231c4968",
+            "text-hash:dac18759a9fd44590b299ae598e0aaaf9fdf915aa08f4275a1f8984625b87700",
+            "text-hash:88ca2db6f27d267056b6c92c959cac3be8775e86c40f07d68d5adaf8311b684a",
+            "text-hash:81761a5d8a8204a248c0339d0965e15fcd31e4e9b8ef7aa6e2f8901c8dabf5fe",
+            "text-hash:91afce1a8c437d75d5a73fc90f0cc908601f50b41a8f62f657d824a38386e079",
+            "text-hash:216d35d4456ab7e7fe4da1cc6140523471a751295596dd8a74b32eb017e8a984",
+            "text-hash:169fa34290cfb2dabdaefacb28dcb20e605647c63500002a7721909d63fa40a9",
+            "text-hash:129999b2283d0b45bd67cd0f8d7229471f9db9279fb3d668c141228535b55cc4"
+          ],
+          "recall@5": 0.5,
+          "recall@10": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_multi_document_a3d46cd07242",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:46d0f9057e5d7998992cb0ed097c18fc8e13e8b792c2031a40aca602776d2702",
+            "text-hash:aa10add4ba5611c849872612bac650c909e3cf9cf8cdbc84cd25b1dc3346d7d6"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:46d0f9057e5d7998992cb0ed097c18fc8e13e8b792c2031a40aca602776d2702",
+            "text-hash:e1c775389d5e382c04099c5333bc20f43a77db17a4e30f0b88fae56dcb0103d6",
+            "text-hash:6517ff78742a0faea39dfb4675f638986625a33b05ae9913a2199a28d3d3a5e4",
+            "text-hash:e6d66c8d57e8f0effbd9ff391faa110d8419bdf4f1a0261570ef3dbbe8254a98",
+            "text-hash:914d3a9aca769cbb3f077c9682c48e396100c9350b16cef39fba2344f275df12",
+            "text-hash:0aa05b35a0e7d08d0b3c08d85abbef50fae15391c2a58718a55117ca9b90a976",
+            "text-hash:e2c3e4fa025c2e5d4a07117a62dbc9fd55b0556767f6fbba2965a42dd6c61e1e",
+            "text-hash:145f7318d96ebb714820aadb9960b48fb951e98fc78e1c75afb1819b37a16899",
+            "text-hash:d24198d15d6b5203d15f7c36a125438236dd141c0990d86764b22fda37907cde",
+            "text-hash:f0eafe7284824f5d55e2925460dab735468829d7dab52fe970e732d2a5eeeddb"
+          ],
+          "recall@5": 0.5,
+          "recall@10": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_multi_document_7d20c52800ee",
+          "category": "multi_document",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:cd8c7e5df6382c743ab5b0b284f17cbfac3a40b57d9e425a3382ab9770e45d56",
+            "text-hash:c87741090ba498c30e5217827057c259e16281f06e82aab116a73d9ce0bda915"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:cd8c7e5df6382c743ab5b0b284f17cbfac3a40b57d9e425a3382ab9770e45d56",
+            "text-hash:560325dc43b826871ae5fe57606580b449ee6abd5342c367088271b36203ba8e",
+            "text-hash:54e58305b7ed85dde9fee04248058afa0ecfd819722ffe9269a1a9a144f55bb5",
+            "text-hash:1c003643c12f15fb6db681f04fb7c2aa9eea6377450599e2d85a96c70f509dba",
+            "text-hash:ffe5c58839ae2023cab6d9cec20c7903a76b053165a3b186bcd2fbe88ba91c0b",
+            "text-hash:1ff432f7cb7dffbfcad11bdbb74d7841bde8bcd44a594237b946204fb9d1400c",
+            "text-hash:3189280c4a3938d87f7202549b108972d81f1f7aeb634691ec5a55a312fba61a",
+            "text-hash:cf423c34c793967b82907561ece4dba5d9d1ee3ca0fc8847d559e354cc14104d",
+            "text-hash:e57e56f858883ebd184c36aa254fd7025c6a1ee14ae44698cc675284688eaf12",
+            "text-hash:29957a42dcaf084332cca69827d253f327f6831cc88226dcce9c935666d4b28a"
+          ],
+          "recall@5": 0.5,
+          "recall@10": 0.5,
+          "mrr": 1.0,
+          "ndcg@5": 0.6131471927654584,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_comparison_daeb47daf95d",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:7ebf0afb46d2f8d235f81ef44660fddd46e67ec86e6f80655ee7d64de26a489b",
+            "text-hash:51a906a3c84f90d563e0a4868e255b91458df5197117cf90d30e126edc9e2304"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:7ebf0afb46d2f8d235f81ef44660fddd46e67ec86e6f80655ee7d64de26a489b",
+            "text-hash:51a906a3c84f90d563e0a4868e255b91458df5197117cf90d30e126edc9e2304",
+            "text-hash:aba981c7dcb572040fbd6f6ef78afeb9ab712253d34dc1dcbebb7cc3afe55f23",
+            "text-hash:c221a235be042dc21bbb729528ef8a369c6c6745bbc020f6b8ab6825dfcbdbc4",
+            "text-hash:309a57ff458df5dceaa57f44e0376def0790640d17df1d8c43b6eee170743030",
+            "text-hash:459408fb8d948a38aee6d4a00322a02644f29f41110aaaecf8cb68917c634f28",
+            "text-hash:dcfe908650295bcb2473639b43ce9acbfbebd70d3201cbd01ddf11750a54cca8",
+            "text-hash:c2cfd0c8147b6e80d0ae544be756d2670c7d73a47b5c193746d0156179a0c53a",
+            "text-hash:dff7a4266a6d37a94ce22e862da67196002005a691bdb39f35d53e812847edb8",
+            "text-hash:80710dfda17d17d42cd115a7e8999a235b5a554befe37a3d0613b227e0cf0957"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_comparison_354d5ea8289f",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:a0d37805e7bddc9dc7a2ec56d4b9325b886c615b3c1949139d6a9625ff97ed8f",
+            "text-hash:25b35b65f4506e20a90a94f85e6e93e118bec41fc1b4ec417c936f19729f6629"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:a38ef68a58621eb64d4d62eaac9e2a9f35f2e4707dbfb31803039da97a7624d1",
+            "text-hash:f29ab33d8cebfd4b1d5463e61b4ce579ba3998606d037d8543123df2a1d1e909",
+            "text-hash:c57eca4c0cf49c7d9148a85bd453775c771f892b134ca76afc4bdda82f2693d5",
+            "text-hash:2417188d2fd3ee2596dcdd6a03c4ebc94b5dadddef88af207dacc554c3d7322d",
+            "text-hash:f909bc53342a06fa9b762cfe7fad3f13877392b717f548e536b9822a6e2414c8",
+            "text-hash:731e13fc622c2d09de8b6e40ef813df1b11a84a8b98a61fe01934609e9ce4dfb",
+            "text-hash:8171208251e6cde8892bc51fc2db1360185972086ba2d7101d52f5cd025c7a67",
+            "text-hash:7a954f7939c09e4410bcdfb5a510aa7c253d29e7b09046e02d4d0eb3824b9c7d",
+            "text-hash:a925e381efd14c4fb635c811058627f78857c14bd7d2ff2361a7270b954ab294",
+            "text-hash:b3de9c19623216bd13c34aaedb4a410a72d8a6042b594ce9a4993735fe1299cd"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_comparison_4ba0abbde214",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:a3bd745d4e4a913d6f7ca3c778eb71bc1da178036f49533c0235d27b239d96e9",
+            "text-hash:3d468e954a187f14a972db028a25b6145da6893215ed5e0ae5bcc53c95c09255"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:b73c9978270de7163f012ff3fdabcac4e4ae471af7f24ef430ed6d63c917d731",
+            "text-hash:cbf9432e8648f9f88ac5a1d32e5997ed556896c0bd9d9d24527a1598a73307d0",
+            "text-hash:7b1bee5a2cf88b24c05337cd5cf50f94164bc005ac6789fc219481fbb8c87f5b",
+            "text-hash:59e58d3920b112f631f775fff214c6666b54ed192dc7fe9c954b1f8b1e73124d",
+            "text-hash:a46f46717a23090c87b660e44d8619451b8fa64d868cea49c909dd9df7193bf4",
+            "text-hash:34bb3c1a8dc3f3088d44c82bc70ae47bbf9b3661dd7464503760909ecc3067ce",
+            "text-hash:f65033b2b322a01684873acad5c68036d0ecaba5b3d312064b313765d5730dfe",
+            "text-hash:2528647be8fa0af2599ea533ac96a24735fdf6ae4d0aba88d09886370a128eaa",
+            "text-hash:df0cd7bb3f1dcaa0bb1357b6656a29b0c9133fbe981a3b8ab32098246a65e885",
+            "text-hash:4f9b7966e655648088b47e17570b36e0c6b2afc1ec2498fc26967864d2a1af22"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_comparison_51a0977c2e87",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:6e63a0c6774dca0dca6f6bb8d29f380374e9fdb1d0b921a8c2294f2f94142ec6",
+            "text-hash:dc59c1fb5dceb4f540125fd405ad50f8ce9d07e9304004cd0b25d20aae725ea1"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:73be3162bc776e27346edefc6f1bf8ebb7054ce29f8677eec034ee13ef5db17f",
+            "text-hash:46fd16dfc4719fcb0173dc34dafa629943cd3016629dc8cda82a6122cca86524",
+            "text-hash:fa712633198fd391b508b7f468e2b6fc6ced907a7a67ee292b5ad911d806ee2b",
+            "text-hash:928f90e6a7b57dd2f0fc0779aad33474b5c73973047fe66539e4ca6a556675dc",
+            "text-hash:bbef104b3f80e24d25cf4e6fbea20cff2bbfeaa2b733700198cfd6510ccfeeb7",
+            "text-hash:6b02cc51556979ae31af4e8f1710fab226b6692781328370ba97c6e91e7e0ca0",
+            "text-hash:af91ed4a84a6f66cc87de5a300d875f07d4038c119209964089ae12b1c7194f7",
+            "text-hash:d0d61a848a0e09ccb356ef6bddfaf27fd8aa7a13db1c07bcb6cedfa4ac94c5a7",
+            "text-hash:887929f4c5f21124b084f93ad7df06e942fe7e229a2b8c304b9053cd7aa43194",
+            "text-hash:5ee23e6393c971e1012610e83a2f64cc6ac808cea6352adbf503f41d562c750c"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_comparison_9655b776cafb",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:4777eb7f8cceaf38614377600a6da2b7435e01c4be114b9b605f18f623563780",
+            "text-hash:0c1ebc16f2443a4ba1328a5a87d24e1baa738ce436da61aef1346f441da17aaf"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:e826e5bf3e615a4c14178673ed4f58c8bd6927fbcf1f2faad8026ee8e6dd9fb7",
+            "text-hash:06d6232c02ca24e4def892a733c0a8a40910721fd662070be5720221b6fc8fc8",
+            "text-hash:0c1ebc16f2443a4ba1328a5a87d24e1baa738ce436da61aef1346f441da17aaf",
+            "text-hash:0ca377ed0ea5470794f81cb9701cca086f6eebbfb84211b86ba16a3832d529da",
+            "text-hash:43f68c4ddb91a2ac9f4b2d99d886ac7a2b55e84e1f7f9e6d2108d11fe4623a99",
+            "text-hash:59e55705530b1d072fcc08ee69d1a8ee668758eb0930dccfb9aabb9912d25c4e",
+            "text-hash:27758eb1e9f82dc6501635a563fd5dcce7542b2533642bc81c9d5b2aa445228d",
+            "text-hash:dd7bf49f9147d2fab1d0c0d3c4fb7e8a3228a4f19cfb325243871d44b620e277",
+            "text-hash:f11c2904eac0c18c6166ed3f40e9cc74b5fadb15271da88ad59cef1a2ec22527",
+            "text-hash:41e64d38e9c4aec95fae7f199d3bce27f799385764c4ad8b3575c7b479d91ae1"
+          ],
+          "recall@5": 0.5,
+          "recall@10": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.3065735963827292,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_comparison_b2d291dd969e",
+          "category": "comparison",
+          "n_gold": 2,
+          "gold_chunk_ids": [
+            "text-hash:4a1ef7b09e0511d071e206f09cf811fde8c608b05dfc5a0abb4c740e374aa589",
+            "text-hash:476ca841f658b722d96da4512205f861dbba00825ba4df44250abe34ffef8a3d"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:0a3a9d87df140beda0f84a4a9d589e531fca77b4ec9134713aea876c7c711379",
+            "text-hash:1fda9c33a1553c03a10d45d9c756fc907b6d01e08260c931d247d924eca37b85",
+            "text-hash:84b4aa7b4e6f7534587f17c03780a45e671be4aaf342722d84a859a4eb6d3d45",
+            "text-hash:9b1fccb97c6f7e55e392171f95b44f5a1732bec99ce87790204e893fea8a9785",
+            "text-hash:cde0d6c4f18cf614e7b6a4938b8c8f247619148f5474bc4839f30189629c3635",
+            "text-hash:d92db8025b79708a338b5da0ad56525363c1015c927930d004def57637928b7b",
+            "text-hash:13a1f62842038d1ade5cd86d91802710dfeeee27ae5eab59e81afc4d60d20b8a",
+            "text-hash:06521012e83c9cbaf084820c3ddc4e71027624573f2faf66bf3fdef43b83c0ea",
+            "text-hash:8795b34f54e97b31abe3ea620d06f742c3d6d75e9758e2812b0c1ef12ca153ee",
+            "text-hash:e00054744d32c607098b23bc38946e05e7a8917f70c032ff8861128283440c26"
+          ],
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@5": 0.0,
+          "all_gold@5": 0.0,
+          "all_gold@10": 0.0
+        },
+        {
+          "id": "bq_conversational_04e92f0dc916",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:43e5a05077d8a75e3e6d82ebb92faa16a39bf91edb8c862a3acc1a59dcaa60cf"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:43e5a05077d8a75e3e6d82ebb92faa16a39bf91edb8c862a3acc1a59dcaa60cf",
+            "text-hash:911fc61ad01ced946e9b5585e7d6cdec416a4a9149c820d210d657cb253d621e",
+            "text-hash:f19a04ff13b31faf882b961c409eb6b61c1391698f71cbfcaf3cccba5576be25",
+            "text-hash:358e46933f3e30e66490d56f98d11c6f9f5633ae7c8c7f8f7e75cae2ad467e9e",
+            "text-hash:7a1500c5f292504d410de61740a15488d6f6eafddcdecb0b4cdd6f4c87d2f676",
+            "text-hash:2496ca756b6f0f4cccce75611156fccf26cd97cbddffec6b743f954ef7ca4dc4",
+            "text-hash:67f75084aca5bb59c73169463095c90fcc2a83cdebc43b91eae0e67d539c89f1",
+            "text-hash:1daf6e5928b2efd987af5b33ebc405e156a34f631d128c1d2b89e2dcd62d36a8",
+            "text-hash:7090eff3951c36255f219c28cfc0b83371816460afbdf537a283a3162de0ab89",
+            "text-hash:8dbf8c65cb7f1fe0825045a95244a7fce9522c053a35a531e8284663dbb683d6"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_conversational_c284f38650d1",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:e3d1a92178f3f80a21e5dd855dc74ed9896f2a3314b8d4a04742144206a7d52e"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:01ad4f600f83b0276701e91c1a17cc9edcb7163a3d296a902fc990ef98cf043b",
+            "text-hash:3d804bed27a9d8bb7baa97b96d87fdd9482c8b694648d6ab77ff626c2953c353",
+            "text-hash:a628000f088180dea7bdc5ea67776238fa6e1035770562b45b9785d14b4db804",
+            "text-hash:560b7723bb3583845041d2ed7778e7b6c9a6b463a46e5edb82d4bafe0ef03536",
+            "text-hash:e3d1a92178f3f80a21e5dd855dc74ed9896f2a3314b8d4a04742144206a7d52e",
+            "text-hash:a7cd3a12385dac28d0218009888bef2a2afa7c24ca42d4866100a18c2ca8abd3",
+            "text-hash:55885ebf51a5a964db2b88cd6953a74eb84eb2d6414c976d844f3a789287bc27",
+            "text-hash:3337902c919680ee123d23c136a5812e5a0aa6b1da791f524bc510c3be340bf1",
+            "text-hash:1a2a8c4545b17672964ad685e3832d6e7bb962dbd1d7cc33769ecf77dde25d17",
+            "text-hash:ca396b3e9b767ce1143fc81d70ef9069a5973e7b3012265cb5ccdefb17db955e"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.2,
+          "ndcg@5": 0.38685280723454163,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_conversational_9521f831c3aa",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:7f738916c1be249ce44eefd77383ac679c0b1bd88b718f4e813dab3ee35b90e9"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:7f738916c1be249ce44eefd77383ac679c0b1bd88b718f4e813dab3ee35b90e9",
+            "text-hash:773fae985ac41996fba461ecc6288b0cd919150576908f8cce9e099f62d7c563",
+            "text-hash:9931ef7b4ce127922cf9b4af525290a905cbce7e46f3d26f1fbc73626df92a46",
+            "text-hash:bd486a7d96d96bd2f4ff649fd20fe1241208af136becce7b229edf32984362c2",
+            "text-hash:4f347996c0cc62925df5143d692d4394903de2a67665d822269e83ad0ff77eed",
+            "text-hash:f39ea5f10d7285e66385c59c1880ca1bbf0bc99d59373b17fa45b8bf0709abeb",
+            "text-hash:7e384f94e4ceef084478dc13cf92c830813892755d0c16f7ba260e682639a2cc",
+            "text-hash:d4431732c4eaddec108fbef2a3f1f56c0ca6c315ee7bf131eee559e4dc9bef50",
+            "text-hash:a1de5efefd6d8560f49d3d8c4dca1a1fe20a9808493aa1efca60873dcd9473d2",
+            "text-hash:290a5940a70446778f3094f70b6f033852417d28091a37cc21e5b5cdb92b5e06"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_conversational_b8ea66e71f40",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:588081153dcb9902041d7acb3d8822a02df4d83ffbabeaf904dbe14b4a734609"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:1dbd3722c9358a85301be79e27e3b84f024948ef31eb08b5f6ce25bb7ec49846",
+            "text-hash:0d6e6e3fd1c6473e52f7d7136312e3b231a3f674ab2f81a7ddcb84d4b2538ef8",
+            "text-hash:588081153dcb9902041d7acb3d8822a02df4d83ffbabeaf904dbe14b4a734609",
+            "text-hash:11cc8f7cc0a89f6277d382b9940f47cbf14884e9dd0ac3f4b218e9eee4385518",
+            "text-hash:7579a62a08d9c4ff5fea257b260a369a63117f230bd35a89f0501c4d6fec794b",
+            "text-hash:fc4b8f6a52df2efab554b0ce427a376b456994678a3862b56ab2ac5d3ff22c29",
+            "text-hash:9cff430c21aad8eff17695239713622998b1e4c273a701d26c7241a43e06bef5",
+            "text-hash:085e34da52b26a23bc145ee91794a533c9d4c09ba8d415ca71bf79c6bd1a3946",
+            "text-hash:02b5879b6bb0b53ae1df5a7cb250d62140767633896c110162797fbbfa7751a2",
+            "text-hash:100015a38127a94587779c405205681f04cb6998d43d65e87d35e7936b52660e"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@5": 0.5,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_conversational_81fce8e6baca",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:42baceda08389accd326bbeae51468476c88a7f29e7527edd651020fa2108a65"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:42baceda08389accd326bbeae51468476c88a7f29e7527edd651020fa2108a65",
+            "text-hash:b1a2417a10f0d238c33403e8f1006d75972e5f9a11648fdf07b8c37b781af97b",
+            "text-hash:869295756d7b210c7a6d33c449dbcaf23e0169fee1b58decdc1540d4e1ac6eae",
+            "text-hash:e3fd2b22b7112a67da3c3b86df72a1d0ff60b1b6e18e6ffff0fda45de88010e7",
+            "text-hash:81adae4998bfb5ce9308941d78643a1037d05ca28b047813757577baf838704f",
+            "text-hash:8e76cb21a20fc6c162fa489432ff8f8e1a7bbd1c50e25b6e53a45317cb53be78",
+            "text-hash:1bc0d3f287bef8e881602cef2db5c7a2d663d21bcc5711c641a9af24539dec94",
+            "text-hash:48cb25a18729e73201cb7194387e42fc415972ee49f8f8bae688678b4e4a4cac",
+            "text-hash:ce8cee068646778c7ceaf24c7aa76135bab50fa4ef460c710f7f3a72b03290dd",
+            "text-hash:a66c8d169dcd36b1c1d0cc1ddd29aa6394efdb56f20ed2e0d732c7d696a585d1"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_conversational_a81b1ff397cb",
+          "category": "conversational",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:df6cc17c7554c474597ba3c4c311f0e7657307fc356c23e5ccb5e5cb49b4f669"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:df6cc17c7554c474597ba3c4c311f0e7657307fc356c23e5ccb5e5cb49b4f669",
+            "text-hash:33c39bb0e724879e71daf567d795c95e6f1721d9d4eeb95e47dc41d5e02a7fb6",
+            "text-hash:4197becc84434154125792c0909a58440407b5f07aac97f29edf5335974a838e",
+            "text-hash:a67626b5f45b97adc89aa32f6e2c806ea181b070c5b2b88a2a0ac97849ceedbd",
+            "text-hash:8ad42c7928be69894fea41d8e40458af26185fc4d9427d304572166240aa5ba2",
+            "text-hash:4f6cf771c8c2d8ed67590c1c5252885f3632f0c8e24211433abcdaf4541c6481",
+            "text-hash:a42eca3b55d4f2919022a1db9b7dace435745ce2331ff407b5832bdc9b164d78",
+            "text-hash:4c5bb9ee4ce6f4d571e6f79e115b08d88c36b6ab707f09a41bc9c2315f43b7ec",
+            "text-hash:3c52ad7b382f2ba7a210d947b21546be5f497bec0e988777c337a6453dbd1601",
+            "text-hash:962efaf8dff505317f28f5f0e3639bb7df2f0f9d10fe488a80b2222552c08e07"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        },
+        {
+          "id": "bq_adversarial_d166d37edc18",
+          "category": "adversarial",
+          "n_gold": 1,
+          "gold_chunk_ids": [
+            "text-hash:35e74355f574b8216c56c914b96dd6dce69a917cbf64db1dcfda508089b94c65"
+          ],
+          "retrieved_chunk_ids": [
+            "text-hash:35e74355f574b8216c56c914b96dd6dce69a917cbf64db1dcfda508089b94c65",
+            "text-hash:c4fcfb260b71f4056a0efa3b0832b2a965ef8ae15ee3c9db1f024a6ffa2b3545",
+            "text-hash:06535ccd18550bbe44a10b0e2fc29916ce001dfa070da1becc3286cdf48e56b0",
+            "text-hash:bee1844c2b13ff17958f2c5eca465ab6724101fc7dcad23c2ca85b2dc369cbbe",
+            "text-hash:cdfdf7b884df2eba73750f95362c6cada6929cdf93090db8f193d962552bb26a",
+            "text-hash:585f62c51df29c0d8bfa7d3024057329f8b910eb550b5ee431793345a63437a4",
+            "text-hash:633f4a1cfd4e336dd15d49007619a25b8053620b00c11bfb91eb4a7d34b18286",
+            "text-hash:a4e71387689851e53f5095a426a1a8778ab12b6cfab404354b5cd34a05e55aaf",
+            "text-hash:797eb62f1b35d1471b80c3b245a1ed8c0446da8e96d37d25718f845fdd08ab05",
+            "text-hash:5afcba1077864fcdc3cedc8cd0ca7cdfa6ccce64d2b2a5fa2c00e936e9760c28"
+          ],
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@5": 1.0,
+          "all_gold@5": 1.0,
+          "all_gold@10": 1.0
+        }
+      ]
+    }
+  }
+}
